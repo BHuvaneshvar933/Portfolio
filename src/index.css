@@ -179,7 +179,6 @@ footer {
   align-items: center;
 }
 
-/* Animated Border */
 .scroll-indicator::before {
   content: "";
   position: absolute;
@@ -190,7 +189,7 @@ footer {
   border: 2px solid transparent;
   border-radius: 30%;
   box-sizing: border-box;
-  animation: borderAnimation 2s infinite;
+  animation: borderAnimation 4s infinite;
 }
 
 @keyframes borderAnimation {
@@ -223,7 +222,6 @@ footer {
   }
 }
 
-/* Arrow */
 .arrow {
   position: absolute;
   bottom: 10%;
@@ -245,7 +243,6 @@ footer {
   }
 }
 
-/* Responsive Design with Media Queries */
 @media (max-width: 768px) {
   .scroll-indicator {
     width: 15vw;

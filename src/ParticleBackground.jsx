@@ -13,7 +13,7 @@ const ParticleBackground = () => {
     animate();
 
     function init() {
-      camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 5, 2000);
+      camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 5, 10000000);
       camera.position.z = 500;
       scene = new THREE.Scene();
       scene.fog = new THREE.FogExp2(0x5d3fd3, 0.001);
