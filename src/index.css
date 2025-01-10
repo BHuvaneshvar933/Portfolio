@@ -245,9 +245,9 @@ footer {
 
 @media (max-width: 768px) {
   .scroll-indicator {
-    width: 15vw;
+    width: 200vw;
     height: 30vw;
-    max-width: 40px;
+    max-width: 200vw;
     max-height: 80px;
   }
 
@@ -260,9 +260,9 @@ footer {
 
 @media (max-width: 480px) {
   .scroll-indicator {
-    width: 20vw;
+    width: 25vw;
     height: 40vw;
-    max-width: 30px;
+    max-width: 10vw;
     max-height: 60px;
   }
 
