@@ -168,9 +168,9 @@ footer {
 }
 
 .scroll-indicator {
-  width: 10vw; /* Relative width */
-  height: 20vw; /* Relative height */
-  max-width: 45px; /* Limit maximum size */
+  width: 10vw;
+  height: 20vw;
+  max-width: 45px;
   max-height: 80px;
   border-radius: 60%;
   position: relative;

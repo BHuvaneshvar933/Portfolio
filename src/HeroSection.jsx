@@ -28,7 +28,7 @@ const HeroSection = () => (
       alt="Avatar"
     />
     <a href="#features">
-      <div className="scroll-indicator absolute top-28 md:top-36 animate-bounce">
+      <div className="scroll-indicator absolute top-28 md:top-36 ">
         <div className="arrow"></div>
       </div>
     </a>
