@@ -19,7 +19,7 @@ const HeroSection = () => (
       className="text-lg sm:text-xl mb-8 mx-auto slideUp text-center text-neutral-300 max-w-4xl font-bold"
       id="normalText"
     >
-      SOFTWARE ENGINEER, FRONT END DEVELOPER.
+      I'm a CSE Student at Cambridge Institute of Technology specializing in Software and Web Development
       <span className="bg-gradient-to-r from-purple-400 to-purple-700 text-transparent bg-clip-text"></span>
     </p>
     <img
@@ -28,7 +28,7 @@ const HeroSection = () => (
       alt="Avatar"
     />
     <a href="#features">
-      <div className="scroll-indicator absolute top-28 md:top-36 ">
+      <div className="scroll-indicator absolute top-28 md:top-34 ">
         <div className="arrow"></div>
       </div>
     </a>

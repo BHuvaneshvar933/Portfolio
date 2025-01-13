@@ -11,6 +11,7 @@ import 'animate.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import Work from "./Work";
+import Experience from "./Experience";
 
 AOS.init();
 
@@ -25,6 +26,7 @@ const App = () => {
             <HeroSection />
             <FeaturesSection />
             <Work/>
+            <Experience/>
             <Footer />
           </>
         } />

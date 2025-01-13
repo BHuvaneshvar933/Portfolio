@@ -38,7 +38,7 @@ const Navbar = () => {
           </a>
           <a
             href="#experience"
-            className="text-white hover:text-gray-400-white text-sm md:text-lg transition"
+            className="text-white hover:text-gray-400 text-sm md:text-lg transition"
           >
             <h1 className="text-xs">04</h1> //Experience
           </a>

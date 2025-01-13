@@ -273,3 +273,19 @@ footer {
   }
 }
 
+#exp{
+  width:1150px;
+}
+
+@media (max-width:768px){
+  #exp{
+    width: 400px;
+    margin-left: 0;
+    
+  }
+
+  #expd{
+    flex-direction: column;
+    
+  }
+}

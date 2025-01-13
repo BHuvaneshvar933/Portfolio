@@ -1,9 +1,9 @@
 import React from 'react';
-import vreality from "C:/Users/bhuva/Downloads/MVJ-main/src/assets/vreality.png";
-import linkedin from "C:/Users/bhuva/Downloads/MVJ-main/src/assets/linkedin.png";
-import todo from "C:/Users/bhuva/Downloads/MVJ-main/src/assets/todo.png";
-import recipesauce from "C:/Users/bhuva/Downloads/MVJ-main/src/assets/recipesauce.png";
-
+import vreality from "./assets/vreality.png";
+import linkedin from "./assets/linkedin.png";
+import todo from "./assets/todo.png";
+import recipesauce from "./assets/recipesauce.png";
+import "animate.css";
 const Work = () => {
   const projects = [
     {
@@ -11,6 +11,7 @@ const Work = () => {
       description: "Web Development",
       image: vreality,
       link: "https://v-reality-azure.vercel.app",
+      movement:"fade-right",
     },
     {
       title: "Linkedin Clone",
@@ -19,6 +20,7 @@ const Work = () => {
       link: "https://linkedin-clone-theta-five.vercel.app",
       size: "large",
       color: "black",
+      movement:"fade-left",
     },
     {
       title: "RecipeSauce(Search recipes)",
@@ -27,12 +29,14 @@ const Work = () => {
       link: "https://recipe-sauce.vercel.app",
       size: "large",
       color: "black",
+      movement:"fade-right",
     },
     {
       title: "Todo",
       description: "Web Development",
       image: todo,
       link: "https://to-do-gilt-ten.vercel.app",
+      movement:"fade-left",
     },
   ];
 
@@ -49,23 +53,23 @@ const Work = () => {
         <p className="text-lg sm:text-xl mb-16 mx-auto slideUp text-center text-neutral-300 max-w-4xl font-bold" id="normalText">
           Here are a few past design projects I've worked on.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-6" >
           {projects.map((project, index) => (
             <div
+              data-aos={`${project.movement}`} data-aos-duration="2000"
               key={index}
-              className={`${
-                project.size === "large"
+              className={`${project.size === "large"
                   ? "col-span-1 sm:col-span-2 lg:col-span-2"
-                  : "col-span-1" 
-              } ${
-                project.color === "black" ? "border-4 border-neutral-900" : "border-4 border-neutral-300"
-              } bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300`}
+                  : "col-span-1"
+                } ${project.color === "black" ? "border-4 border-neutral-900" : "border-4 border-neutral-300"
+                } bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300`}
+                
             >
               <a href={project.link} target="_blank" rel="noopener noreferrer">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-48 sm:h-64 lg:h-96 object-cover" 
+                  className="w-full h-48 sm:h-64 lg:h-96 object-cover"
                 />
                 <div className="p-4 bg-gradient-to-br from-neutral-950 to-neutral-800">
                   <h3 className="text-sm sm:text-lg md:text-xl font-semibold">{project.title}</h3>
