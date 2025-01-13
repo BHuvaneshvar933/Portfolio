@@ -21,7 +21,7 @@ const Experience = () => {
                 {experience.map((exp, index) => (
                     <div
                         key={index}
-                        className="rounded-lg bg-gradient-to-br from-neutral-950 to-neutral-800 overflow-hidden shadow-md hover:shadow-xl transform transition duration-300 px-5 py-8 border-2 border-neutral-700 mx-auto "
+                        className="rounded-lg bg-gradient-to-br from-neutral-950 to-neutral-800 overflow-hidden shadow-md hover:shadow-xl transform transition duration-300 px-5 py-8 border-2 border-neutral-700 mx-auto max-md:ml-4 "
                          data-aos="fade-up"
             data-aos-duration="2000"
                     >
