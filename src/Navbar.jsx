@@ -20,31 +20,31 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-8">
           <a
             href="#home"
-            className="text-gray-400 hover:text-white text-sm md:text-lg transition"
+            className="text-white hover:text-gray-400 text-sm md:text-lg transition"
           >
             <h1 className="text-xs">01</h1> //Home
           </a>
           <a
             href="#features"
-            className="text-gray-400 hover:text-white text-sm md:text-lg transition"
+            className="text-white hover:text-gray-400 text-sm md:text-lg transition"
           >
             <h1 className="text-xs">02</h1> //Expertise
           </a>
           <a
             href="#work"
-            className="text-gray-400 hover:text-white text-sm md:text-lg transition"
+            className="text-white hover:text-gray-400 text-sm md:text-lg transition"
           >
             <h1 className="text-xs">03</h1> //Work
           </a>
           <a
             href="#experience"
-            className="text-gray-400 hover:text-white text-sm md:text-lg transition"
+            className="text-white hover:text-gray-400-white text-sm md:text-lg transition"
           >
             <h1 className="text-xs">04</h1> //Experience
           </a>
           <a
             href="#contact"
-            className="text-gray-400 hover:text-white text-sm md:text-lg transition"
+            className="text-white hover:text-gray-400 text-sm md:text-lg transition"
           >
             <h1 className="text-xs">05</h1> //Contact
           </a>

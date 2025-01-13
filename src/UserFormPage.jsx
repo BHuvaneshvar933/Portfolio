@@ -19,8 +19,7 @@ const UserForm = () => {
   };
 
   const handleClose = () => {
-    // Code to close the form, you can either hide the form or reset the state
-    setFormData({ name: '', contact: '' }); // Or use any other logic to close the form
+    setFormData({ name: '', contact: '' }); 
   };
 
   return (
@@ -83,10 +82,10 @@ const UserForm = () => {
             required 
           />
         </div>
-        <div className="flex justify-between">
+        <div className="flex pl-2 justify-between">
           <button 
             type="submit" 
-            className="px-4 py-2 ml-24 shadow-md hover:bg-purple-700 transition bg-white rounded-full text-lg font-semibold hoverScale bg-gradient-to-r from-purple-500 to-purple-800 text-white shadow-neon hover:shadow-neon-hover"
+            className="px-4 py-2 ml-24  shadow-md hover:bg-purple-700 transition bg-white rounded-full text-lg font-semibold hoverScale bg-gradient-to-r from-purple-500 to-purple-800 text-white shadow-neon hover:shadow-neon-hover"
             id="neon-button"
           >
             Submit
