@@ -1,5 +1,5 @@
 import React from 'react';
-import "animate.css";
+
 
 const Experience = () => {
     const experience = [
@@ -13,7 +13,7 @@ const Experience = () => {
     ];
 
     return (
-        <div className="flex flex-col items-center" id='experience'>
+        <div className="flex  flex-col items-center w-full" >
             <h1 className='text-5xl text-center mt-24 mb-12' id='heading'>
                 My <span className="bg-gradient-to-br from-purple-300 to-purple-600 text-transparent bg-clip-text">Experience</span>
             </h1>
@@ -21,7 +21,7 @@ const Experience = () => {
                 {experience.map((exp, index) => (
                     <div
                         key={index}
-                        className="rounded-lg bg-gradient-to-br from-neutral-950 to-neutral-800 overflow-hidden shadow-md hover:shadow-xl transform transition duration-300 px-5 py-8 border-2 border-neutral-700 mx-auto ml-4"
+                        className="rounded-lg bg-gradient-to-br from-neutral-950 to-neutral-800 overflow-hidden shadow-md hover:shadow-xl transform transition duration-300 px-5 py-8 border-2 border-neutral-700 mx-auto "
                          data-aos="fade-up"
             data-aos-duration="2000"
                     >

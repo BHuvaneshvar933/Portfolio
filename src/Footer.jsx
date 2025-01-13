@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Footer = () => (
-  <footer id="contact" className="text-white z-50 bg-neutral-950 ">
+  <footer id="contact" className="text-white z-50 w-full bg-neutral-950 ">
     <div className="container mx-auto  text-center">
       <div className="flex flex-col md:flex-row md:space-x-7 relative bottom-24 w-full h-auto bg-gradient-to-br from-neutral-950 to-neutral-800 mx-auto rounded-xl px-10 py-10 ">
         <h2 className="text-xl md:text-2xl mb-3 md:mb-0 font-bold"><p></p>Let's work together...</h2>

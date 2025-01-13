@@ -11,7 +11,7 @@ const Work = () => {
       description: "Web Development",
       image: vreality,
       link: "https://v-reality-azure.vercel.app",
-      movement:"fade-right",
+     
     },
     {
       title: "Linkedin Clone",
@@ -20,7 +20,7 @@ const Work = () => {
       link: "https://linkedin-clone-theta-five.vercel.app",
       size: "large",
       color: "black",
-      movement:"fade-left",
+    
     },
     {
       title: "RecipeSauce(Search recipes)",
@@ -29,21 +29,21 @@ const Work = () => {
       link: "https://recipe-sauce.vercel.app",
       size: "large",
       color: "black",
-      movement:"fade-right",
+     
     },
     {
       title: "Todo",
       description: "Web Development",
       image: todo,
       link: "https://to-do-gilt-ten.vercel.app",
-      movement:"fade-left",
+     
     },
   ];
 
   return (
     <>
-      <div id="work"></div>
-      <section className="text-white py-12 px-4 md:px-12 lg:px-40 mt-10">
+      <div id="work "></div>
+      <section className="text-white w-full  py-12 px-4 md:px-12 lg:px-40 mt-10">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8" id="heading">
           My{" "}
           <span className="bg-gradient-to-r from-purple-400 to-purple-600 text-transparent bg-clip-text font-extrabold">
@@ -53,10 +53,10 @@ const Work = () => {
         <p className="text-lg sm:text-xl mb-16 mx-auto slideUp text-center text-neutral-300 max-w-4xl font-bold" id="normalText">
           Here are a few past design projects I've worked on.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-6" >
+        <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 grid-rows-2 gap-6" >
           {projects.map((project, index) => (
             <div
-              data-aos={`${project.movement}`} data-aos-duration="2000"
+              data-aos="fade-up" data-aos-duration="2000"
               key={index}
               className={`${project.size === "large"
                   ? "col-span-1 sm:col-span-2 lg:col-span-2"

@@ -9,7 +9,7 @@ const FeaturesSection = () => (
       className="w-full sm:w-2/3 mx-auto mb-8"
       alt="Hero Devices"
     />
-    <section id="features" className="py-20 z-50">
+    <section id="features" className=" py-20 z-50 w-full">
       <div className="container mx-auto px-4 text-center">
         <h2
           className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-12 fadeInBottom"

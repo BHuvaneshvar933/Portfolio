@@ -23,11 +23,12 @@ const App = () => {
       <Routes>
         <Route path="/" element={
           <>
-            <HeroSection />
-            <FeaturesSection />
-            <Work/>
-            <Experience/>
-            <Footer />
+            <HeroSection/>
+           <FeaturesSection/>
+           <Work/>
+          <Experience/>
+          <Footer/>
+          
           </>
         } />
         <Route path="/user-form" element={<UserFormPage />} />
