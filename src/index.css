@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -290,7 +290,6 @@ footer {
   }
 }
 
-/* Keyframes for zoom-in animation */
 @keyframes zoomIn {
   0% {
     transform: scale(5);

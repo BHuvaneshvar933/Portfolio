@@ -50,7 +50,7 @@ const Work = () => {
             Projects
           </span>
         </h2>
-        <p className="text-lg sm:text-xl mb-16 mx-auto slideUp text-center text-neutral-300 max-w-4xl font-bold" id="normalText">
+        <p className="text-lg sm:text-xl mb-16 mx-auto slideUp text-center text-neutral-400 max-w-4xl font-bold" id="normalText">
           Here are a few past design projects I've worked on.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 grid-rows-2 gap-6" >

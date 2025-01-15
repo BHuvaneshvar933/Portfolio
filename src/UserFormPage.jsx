@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import { collection, addDoc } from "firebase/firestore";
-import db from "./firebase"; // Import Firebase configuration
+import db from "./firebase";
+import emailjs from 'emailjs-com';
 
 const UserForm = () => {
   const [formData, setFormData] = useState({ name: '', contact: '' });
-  const [message, setMessage] = useState(''); // State for the confirmation message
-
+  const [message, setMessage] = useState(''); 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -14,20 +14,28 @@ const UserForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+  
     try {
-      // Add data to Firestore
-      await addDoc(collection(db, "users"), {
-        name: formData.name,
-        contact: formData.contact,
-      });
-      setMessage("Will contact you soon"); // Set confirmation message
-      setFormData({ name: '', contact: '' }); // Reset form
-      setTimeout(() => setMessage(''), 3000); // Clear message after 3 seconds
+      const result = await emailjs.send(
+        "service_ecbofp6",    
+        "template_0z3ofva", 
+        {
+          name: formData.name,  
+          contact: formData.contact,
+        },
+        "vKjmn9BakiVoAjvNm"          
+      );
+  
+      console.log("Email sent successfully:", result.text);
+      setMessage("Will contact you soon");
+      setFormData({ name: '', contact: '' });
+      setTimeout(() => setMessage(''), 3000);
     } catch (error) {
-      console.error("Error adding document: ", error);
-      alert("Failed to submit data.");
+      console.error("Error sending email:", error);
+      alert("Failed to send email. Please try again later.");
     }
   };
+  
 
   const handleReset = () => {
     setFormData({ name: '', contact: '' });

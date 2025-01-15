@@ -23,7 +23,6 @@ const FeaturesSection = () => (
           </span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Software Development Card */}
           <div
             className="flex flex-col space-y-8 feature-card p-6 bg-gradient-to-br from-neutral-950 to-neutral-900 backdrop-blur-sm shadow-lg hover:shadow-xl transition hoverShadow border-4 border-neutral-300 rounded-2xl md:rounded-l-2xl"
             data-aos="fade-up"
@@ -36,16 +35,16 @@ const FeaturesSection = () => (
               </h3>
             </div>
             <div className="slideUp text-center">
-              <p className="text-base lg:text-xl mb-8">
+              <p className="text-base lg:text-xl mb-8 text-neutral-400">
                 I prioritize efficient code architecture, modular design patterns, and intuitive user experiences in software development.
               </p>
-              <p className="bg-gradient-to-br from-purple-300 to-purple-600 text-transparent bg-clip-text mb-2">
+              <p className="bg-gradient-to-br from-purple-300 to-purple-600 text-transparent bg-clip-text mb-2 font-bold">
                 Languages I Speak:
               </p>
-              <p className="mb-2">Java</p>
-              <p className="mb-2">Python</p>
-              <p className="mb-2">C</p>
-              <p className="mb-2">JavaScript</p>
+              <p className="mb-2 text-neutral-400">Java</p>
+              <p className="mb-2 text-neutral-400">Python</p>
+              <p className="mb-2 text-neutral-400">C</p>
+              <p className="mb-2 text-neutral-400">JavaScript</p>
             </div>
           </div>
 
@@ -61,29 +60,29 @@ const FeaturesSection = () => (
                 Web Developer
               </h3>
             </div>
-            <p className="text-base lg:text-xl mb-8">
+            <p className="text-base lg:text-xl py-2 mb-8 text-neutral-400">
               I like to code things from scratch, and enjoy bringing ideas to life in the browser.
             </p>
-            <div className="slideUp text-center flex flex-col md:flex-row md:justify-between md:px-10 space-y-8 md:space-y-0">
+            <div className="slideUp text-center flex flex-col md:flex-row md:justify-between md:px-12 space-y-8 md:space-y-0 ">
               <div>
-                <p className="bg-gradient-to-br from-purple-300 to-purple-600 text-transparent bg-clip-text mb-2">
+                <p className="bg-gradient-to-br from-purple-300 to-purple-600 text-transparent bg-clip-text mb-2 font-bold">
                   Languages I Speak:
                 </p>
-                <p className="mb-2">HTML</p>
-                <p className="mb-2">CSS</p>
-                <p className="mb-2">Git</p>
-                <p className="mb-2">Sass</p>
+                <p className="mb-2 text-neutral-400">HTML</p>
+                <p className="mb-2 text-neutral-400">CSS</p>
+                <p className="mb-2 text-neutral-400">Git</p>
+                <p className="mb-2 text-neutral-400">Sass</p>
               </div>
               <div>
-                <p className="bg-gradient-to-br from-purple-300 to-purple-600 text-transparent bg-clip-text mb-2">
+                <p className="bg-gradient-to-br from-purple-300 to-purple-600 text-transparent bg-clip-text mb-2 font-bold">
                   Dev Tools:
                 </p>
-                <p className="mb-2">Tailwind CSS</p>
-                <p className="mb-2">Netlify</p>
-                <p className="mb-2">Vercel</p>
-                <p className="mb-2">VS Code</p>
-                <p className="mb-2">GitHub</p>
-                <p className="mb-2">Vite</p>
+                <p className="mb-2 text-neutral-400">Tailwind CSS</p>
+                <p className="mb-2 text-neutral-400">Netlify</p>
+                <p className="mb-2 text-neutral-400">Vercel</p>
+                <p className="mb-2 text-neutral-400">VS Code</p>
+                <p className="mb-2 text-neutral-400">GitHub</p>
+                <p className="mb-2 text-neutral-400">Vite</p>
               </div>
             </div>
           </div>

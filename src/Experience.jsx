@@ -28,10 +28,10 @@ const Experience = () => {
                         <div className="p-4 flex flex-col md:flex-row">
                             <img src={exp.image} alt={exp.title} className='w-14 h-14 border-8 border-double border-purple-600 rounded-lg mb-4 md:mb-0 md:mr-3' />
                             <div className="flex-grow">
-                                <h3 className="text-sm sm:text-lg md:text-xl font-bold">
-                                    <span className="bg-gradient-to-br from-purple-300 to-purple-600 text-transparent bg-clip-text">{exp.title}</span>
+                                <h3 className="text-lg sm:text-2xl md:text-2xl font-bold">
+                                    <span className="bg-gradient-to-br from-purple-300 to-purple-600 text-transparent bg-clip-text ">{exp.title}</span>
                                 </h3>
-                                <a href={exp.link} className='text-neutral-600 font-semibold'>AD ASTRA CIT</a>
+                                <a href={exp.link} className='text-neutral-600 font-semibold text-base'>AD ASTRA CIT</a>
                             </div>
                             <p className='text-2xl font-bold mt-2 md:mt-0 md:ml-4 bg-gradient-to-br from-purple-300 to-purple-600 text-transparent bg-clip-text'>{exp.duration}</p>
                         </div>

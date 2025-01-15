@@ -7,7 +7,7 @@ const Footer = () => (
       <div className="flex flex-col md:flex-row md:space-x-7 relative bottom-24 w-full h-auto bg-gradient-to-br from-neutral-950 to-neutral-800 mx-auto rounded-xl px-10 py-10 ">
         <h2 className="text-xl md:text-2xl mb-3 md:mb-0 font-bold"><p></p>Let's work together...</h2>
         <p className="text-base md:text-base font-bold flex-1 mb-4 md:mb-0">
-          Have an exciting project you need help with? Send me an email or contact me via instant message!
+          Have an exciting project you need help with? submit your contact or contact me via social media!
         </p>
         <Link to="/user-form">
           <button
@@ -60,6 +60,9 @@ const Footer = () => (
         >
           <i className="fa fa-instagram"> Instagram</i>
         </a>
+        
+
+
       </div>
 
       <p className="text-xs md:text-sm">

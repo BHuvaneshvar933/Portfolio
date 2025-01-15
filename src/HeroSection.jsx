@@ -16,7 +16,7 @@ const HeroSection = () => (
       </span>
     </h1>
     <p
-      className="text-lg sm:text-xl mb-8 mx-auto slideUp text-center text-neutral-300 max-w-4xl font-bold"
+      className="text-lg sm:text-xl mb-8 mx-auto slideUp text-center text-neutral-400 max-w-4xl font-bold"
       id="normalText"
     >
       I'm a CSE Student at Cambridge Institute of Technology specializing in Software and Web Development
