@@ -14,7 +14,7 @@ const UserForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    handleVibration();
+    
   
     try {
       const result = await emailjs.send(
@@ -46,11 +46,7 @@ const UserForm = () => {
     setFormData({ name: '', contact: '' });
   };
 
-  const handleVibration = () => {
-    if (navigator.vibrate) {
-      navigator.vibrate(200); 
-    }
-  };
+  
 
   return (
     <div className="flex flex-col items-center justify-center h-screen">
@@ -72,7 +68,9 @@ const UserForm = () => {
             <Link to="/#home">
               <button 
                 type="button" 
-                onClick={handleVibration}
+           
+                onClick={handleClose}
+                
                 className="text-4xl text-purple-700 hover:text-white"
               >
                 &times; 
