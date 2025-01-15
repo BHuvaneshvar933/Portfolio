@@ -56,13 +56,13 @@ const Work = () => {
         <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 grid-rows-2 gap-6" >
           {projects.map((project, index) => (
             <div
-               data-aos-duration="2000"
+              data-aos="fade-up" data-aos-duration="2000"
               key={index}
               className={`${project.size === "large"
                   ? "col-span-1 sm:col-span-2 lg:col-span-2"
                   : "col-span-1"
                 } ${project.color === "black" ? "border-4 border-neutral-900" : "border-4 border-neutral-300"
-                }  bg-gray-800 rounded-lg overflow-hidden  shadow-md `} id="tile animate-zoom"
+                }  bg-gray-800 rounded-lg overflow-hidden  shadow-md `} 
                 
             >
               <a href={project.link} target="_blank" rel="noopener noreferrer">
