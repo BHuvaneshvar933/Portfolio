@@ -14,7 +14,7 @@ const Footer = () => (
             className="px-6 py-3 w-full md:w-48 shadow-md hover:bg-purple-700 transition bg-white rounded-full text-lg font-semibold hoverScale bg-gradient-to-r from-purple-500 to-purple-900 text-white shadow-neon hover:shadow-neon-hover"
             id="neon-button"
           >
-            Let's do it
+            CONTACT ME
           </button>
         </Link>
       </div>
