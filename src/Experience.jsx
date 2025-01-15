@@ -13,8 +13,8 @@ const Experience = () => {
     ];
 
     return (
-        <div className="flex  flex-col items-center w-full" >
-            <h1 className='text-5xl text-center mt-24 mb-12 sm:text-4xl max-md:text-3xl' id='heading'>
+        <div className="flex  flex-col items-center w-full" id="experience">
+            <h1 className='text-5xl text-center mt-24 mb-12  max-sm:text-3xl' id='heading'>
                 My <span className="bg-gradient-to-br from-purple-300 to-purple-600 text-transparent bg-clip-text">Experience</span>
             </h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 grid-rows-1 gap-6 mx-4 max-md:mb-36 mb-48" id="exp">

@@ -42,7 +42,7 @@ const Work = () => {
 
   return (
     <>
-      <div id="work "></div>
+      <div id="work"></div>
       <section className="text-white w-full  py-12 px-4 md:px-12 lg:px-40 mt-10">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8" id="heading">
           My{" "}
@@ -56,13 +56,13 @@ const Work = () => {
         <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 grid-rows-2 gap-6" >
           {projects.map((project, index) => (
             <div
-              data-aos="fade-up" data-aos-duration="2000"
+               data-aos-duration="2000"
               key={index}
               className={`${project.size === "large"
                   ? "col-span-1 sm:col-span-2 lg:col-span-2"
                   : "col-span-1"
                 } ${project.color === "black" ? "border-4 border-neutral-900" : "border-4 border-neutral-300"
-                } bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300`}
+                }  bg-gray-800 rounded-lg overflow-hidden  shadow-md `} id="tile animate-zoom"
                 
             >
               <a href={project.link} target="_blank" rel="noopener noreferrer">
