@@ -17,7 +17,7 @@ const Work = () => {
       title: "Linkedin Clone",
       description: "Web Development",
       image: linkedin,
-      link: "https://linkedin-clone-theta-five.vercel.app",
+      link: "https://linkedin-clone-navy-zeta.vercel.app",
       size: "large",
       color: "black",
     
