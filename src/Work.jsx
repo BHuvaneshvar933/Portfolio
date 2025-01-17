@@ -14,15 +14,6 @@ const Work = () => {
      
     },
     {
-      title: "Linkedin Clone",
-      description: "Web Development",
-      image: linkedin,
-      link: "https://linkedin-clone-navy-zeta.vercel.app",
-      size: "large",
-      color: "black",
-    
-    },
-    {
       title: "RecipeSauce(Search recipes)",
       description: "Web Development",
       image: recipesauce,
@@ -30,6 +21,15 @@ const Work = () => {
       size: "large",
       color: "black",
      
+    },
+    {
+      title: "Linkedin Clone",
+      description: "Web Development",
+      image: linkedin,
+      link: "https://linkedin-clone-navy-zeta.vercel.app",
+      size: "large",
+      color: "black",
+    
     },
     {
       title: "Todo",
