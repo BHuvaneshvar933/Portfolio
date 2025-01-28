@@ -1,7 +1,7 @@
 import React from 'react';
 import vreality from "./assets/vreality.png";
-import linkedin from "./assets/linkedin.png";
-import todo from "./assets/todo.png";
+import photo from "./assets/home_page.jpg";
+import gym from "./assets/Products1_page.jpg";
 import recipesauce from "./assets/recipesauce.png";
 import "animate.css";
 const Work = () => {
@@ -23,20 +23,20 @@ const Work = () => {
      
     },
     {
-      title: "Linkedin Clone",
+      title: "Photography-portfolio",
       description: "Web Development",
-      image: linkedin,
-      link: "https://linkedin-clone-navy-zeta.vercel.app",
+      image: "https://github.com/JoaoFranco03/photography-portfolio/raw/main/dist/assets/mockup.png",
+      link: "https://photography-portfolio-ebon-seven.vercel.app",
       size: "large",
       color: "black",
-    
     },
     {
-      title: "Todo",
+      title: "E-commerce Gym Website",
       description: "Web Development",
-      image: todo,
-      link: "https://to-do-gilt-ten.vercel.app",
-     
+      image: gym,
+      link: "https://gymstore2.vercel.app",
+      
+    
     },
   ];
 
