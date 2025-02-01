@@ -3,16 +3,18 @@ import vreality from "./assets/vreality.png";
 import photo from "./assets/home_page.jpg";
 import gym from "./assets/Products1_page.jpg";
 import recipesauce from "./assets/recipesauce.png";
+import home from "./assets/home_page.jpg"
 import "animate.css";
 const Work = () => {
   const projects = [
     {
-      title: "VReality(Product Landing Page)",
+      title: "Photography-portfolio",
       description: "Web Development",
-      image: vreality,
-      link: "https://v-reality-azure.vercel.app",
+      image: home,
+      link: "https://photography-portfolio-ebon-seven.vercel.app",
      
     },
+   
     {
       title: "RecipeSauce(Search recipes)",
       description: "Web Development",
@@ -23,10 +25,10 @@ const Work = () => {
      
     },
     {
-      title: "Photography-portfolio",
+      title: "VReality(Product Landing Page)",
       description: "Web Development",
-      image: "https://github.com/JoaoFranco03/photography-portfolio/raw/main/dist/assets/mockup.png",
-      link: "https://photography-portfolio-ebon-seven.vercel.app",
+      image: vreality,
+      link: "https://v-reality-azure.vercel.app",
       size: "large",
       color: "black",
     },
