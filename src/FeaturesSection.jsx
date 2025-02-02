@@ -1,7 +1,8 @@
 import React from "react";
 import "animate.css";
 import { LaptopMinimal, SquareTerminal } from "lucide-react";
-import coding from "./assets/coding.mp4"
+import coding from "./assets/Coding.mp4"
+
 
 const FeaturesSection = () => (
   <>
