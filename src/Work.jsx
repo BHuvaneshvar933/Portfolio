@@ -56,30 +56,33 @@ const Work = () => {
           Here are a few past design projects I've worked on.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 grid-rows-2 gap-6" >
-          {projects.map((project, index) => (
-            <div
-              data-aos="fade-up" data-aos-duration="2000"
-              key={index}
-              className={`${project.size === "large"
-                  ? "col-span-1 sm:col-span-2 lg:col-span-2"
-                  : "col-span-1"
-                } ${project.color === "black" ? "border-4 border-neutral-900" : "border-4 border-neutral-300"
-                }  bg-gray-800 rounded-lg overflow-hidden  shadow-md `} 
-                
-            >
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 sm:h-64 lg:h-96 object-cover"
-                />
-                <div className="p-4 bg-gradient-to-br from-neutral-950 to-neutral-800">
-                  <h3 className="text-sm sm:text-lg md:text-xl font-semibold">{project.title}</h3>
-                  <p className="text-sm sm:text-base md:text-lg text-gray-400">{project.description}</p>
-                </div>
-              </a>
-            </div>
-          ))}
+        {projects.map((project, index) => (
+  <div
+    data-aos="fade-up" data-aos-duration="2000"
+    key={index}
+    className={`${project.size === "large"
+        ? "col-span-1 sm:col-span-2 lg:col-span-2"
+        : "col-span-1"
+      } ${project.color === "black" ? "border-4 border-neutral-900" : "border-4 border-neutral-300"
+      } bg-gray-800 rounded-lg overflow-hidden shadow-md transform transition-all duration-500 hover:scale-110`}
+  >
+    <a href={project.link} target="_blank" rel="noopener noreferrer" className="block">
+      <div className="relative">
+        <img
+          src={project.image}
+          alt={project.title}
+          className="w-full h-48 sm:h-64 lg:h-96 object-cover transition-all duration-500"
+        />
+      </div>
+      <div className="p-4 bg-gradient-to-br from-neutral-950 to-neutral-800">
+        <h3 className="text-sm sm:text-lg md:text-xl font-semibold">{project.title}</h3>
+        <p className="text-sm sm:text-base md:text-lg text-gray-400">{project.description}</p>
+      </div>
+    </a>
+  </div>
+))}
+
+
         </div>
       </section>
     </>

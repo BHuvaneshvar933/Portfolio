@@ -1,6 +1,7 @@
 import React from "react";
 import "animate.css";
 import { LaptopMinimal, SquareTerminal } from "lucide-react";
+import coding from "./assets/coding.mp4"
 
 const FeaturesSection = () => (
   <>
@@ -34,7 +35,25 @@ const FeaturesSection = () => (
                 Software Development
               </h3>
             </div>
-            <div className="slideUp text-center">
+            <div className="text-center">
+  <h3 className="text-2xl lg:text-3xl font-semibold mb-3 text-neutral-400">
+    On a journey to mastering Software Development 🏕️
+  </h3>
+
+  <div className="relative w-full max-w-3xl mx-auto">
+  <video 
+    className="w-full h-96 rounded-lg shadow-lg" 
+    autoPlay 
+    loop 
+    muted 
+    playsInline
+  >
+    <source src={coding} type="video/mp4" />
+  </video>
+  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-lg"></div>
+</div>
+</div>
+            {/*<div className="slideUp text-center">
               <p className="text-base lg:text-xl mb-8 text-neutral-400">
                 I prioritize efficient code architecture, modular design patterns, and intuitive user experiences in software development.
               </p>
@@ -45,7 +64,7 @@ const FeaturesSection = () => (
               <p className="mb-2 text-neutral-400">Python</p>
               <p className="mb-2 text-neutral-400">C</p>
               <p className="mb-2 text-neutral-400">JavaScript</p>
-            </div>
+            </div>*/}
           </div>
 
           {/* Web Developer Card */}
@@ -63,26 +82,27 @@ const FeaturesSection = () => (
             <p className="text-base lg:text-xl py-2 mb-8 text-neutral-400">
               I like to code things from scratch, and enjoy bringing ideas to life in the browser.
             </p>
-            <div className="slideUp text-center flex flex-col md:flex-row md:justify-between md:px-12 space-y-8 md:space-y-0 ">
+            <div className="slideUp text-center flex flex-col md:flex-row md:justify-between md:pr-3 space-y-8 md:space-y-0 ">
               <div>
-                <p className="bg-gradient-to-br from-purple-300 to-purple-600 text-transparent bg-clip-text mb-2 font-bold">
+                <p className="bg-gradient-to-br text-2xl from-purple-300 to-purple-600 text-transparent bg-clip-text mb-2 font-bold">
                   Languages I Speak:
                 </p>
-                <p className="mb-2 text-neutral-400">HTML</p>
-                <p className="mb-2 text-neutral-400">CSS</p>
-                <p className="mb-2 text-neutral-400">Git</p>
-                <p className="mb-2 text-neutral-400">Sass</p>
+                <p className="mb-2 text-xl text-neutral-400">HTML</p>
+                <p className="mb-2 text-xl text-neutral-400">CSS</p>
+                <p className="mb-2 text-xl text-neutral-400">Git</p>
+                <p className="mb-2 text-xl text-neutral-400">Scss</p>
               </div>
               <div>
-                <p className="bg-gradient-to-br from-purple-300 to-purple-600 text-transparent bg-clip-text mb-2 font-bold">
+                <p className="bg-gradient-to-br text-2xl from-purple-300 to-purple-600 text-transparent bg-clip-text mb-2 font-bold">
                   Dev Tools:
                 </p>
-                <p className="mb-2 text-neutral-400">Tailwind CSS</p>
-                <p className="mb-2 text-neutral-400">Netlify</p>
-                <p className="mb-2 text-neutral-400">Vercel</p>
-                <p className="mb-2 text-neutral-400">VS Code</p>
-                <p className="mb-2 text-neutral-400">GitHub</p>
-                <p className="mb-2 text-neutral-400">Vite</p>
+                <p className="mb-2 text-xl text-neutral-400">Tailwind CSS</p>
+                <p className="mb-2 text-xl text-neutral-400">React.js</p>
+                <p className="mb-2 text-xl text-neutral-400">Netlify</p>
+                <p className="mb-2 text-xl text-neutral-400">Vercel</p>
+                <p className="mb-2 text-xl text-neutral-400">VS Code</p>
+                <p className="mb-2 text-xl text-neutral-400">GitHub</p>
+                <p className="mb-2 text-xl text-neutral-400">Vite</p>
               </div>
             </div>
           </div>
