@@ -38,7 +38,7 @@ const FeaturesSection = () => (
             </div>
             <div className="text-center">
   <h3 className="text-2xl lg:text-3xl font-semibold mb-3 text-neutral-400">
-    On a journey to mastering Software Development 🏕️
+    On a journey to learning Software Development 🏕️
   </h3>
 
   <div className="relative w-full max-w-3xl mx-auto">
