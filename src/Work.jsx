@@ -36,7 +36,7 @@ const Work = () => {
       title: "E-commerce Gym Website",
       description: "Web Development",
       image: gym,
-      link: "https://gymstore2.vercel.app",
+      link: "https://gymstore3.vercel.app",
       
     
     },
