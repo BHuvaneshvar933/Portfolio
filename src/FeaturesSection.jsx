@@ -91,7 +91,7 @@ const FeaturesSection = () => (
                 <p className="mb-2 text-xl text-neutral-400">HTML</p>
                 <p className="mb-2 text-xl text-neutral-400">CSS</p>
                 <p className="mb-2 text-xl text-neutral-400">Git</p>
-                <p className="mb-2 text-xl text-neutral-400">Scss</p>
+                <p className="mb-2 text-xl text-neutral-400">JavaScript</p>
               </div>
               <div>
                 <p className="bg-gradient-to-br text-2xl from-purple-300 to-purple-600 text-transparent bg-clip-text mb-2 font-bold">

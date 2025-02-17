@@ -4,6 +4,7 @@ import photo from "./assets/home_page.jpg";
 import gym from "./assets/Products1_page.jpg";
 import recipesauce from "./assets/recipesauce.png";
 import home from "./assets/home_page.jpg"
+import linkedIn from "./assets/linkedin.png"
 import "animate.css";
 const Work = () => {
   const projects = [
@@ -11,7 +12,7 @@ const Work = () => {
       title: "Photography-portfolio",
       description: "Web Development",
       image: home,
-      link: "https://photography-portfolio-ebon-seven.vercel.app",
+      link: "https://github.com/BHuvaneshvar933/Photography_portfolio",
      
     },
    
@@ -19,16 +20,16 @@ const Work = () => {
       title: "RecipeSauce(Search recipes)",
       description: "Web Development",
       image: recipesauce,
-      link: "https://recipe-sauce.vercel.app",
+      link: "https://github.com/BHuvaneshvar933/gymstore3",
       size: "large",
       color: "black",
      
     },
     {
-      title: "VReality(Product Landing Page)",
+      title: "LinkedIn Clone",
       description: "Web Development",
-      image: vreality,
-      link: "https://v-reality-azure.vercel.app",
+      image: linkedIn,
+      link: "https://github.com/BHuvaneshvar933/Linkedin-Clone",
       size: "large",
       color: "black",
     },
@@ -36,7 +37,7 @@ const Work = () => {
       title: "E-commerce Gym Website",
       description: "Web Development",
       image: gym,
-      link: "https://gymstore3.vercel.app",
+      link: "https://github.com/BHuvaneshvar933/gymstore3",
       
     
     },
@@ -53,7 +54,7 @@ const Work = () => {
           </span>
         </h2>
         <p className="text-lg sm:text-xl mb-16 mx-auto slideUp text-center text-neutral-400 max-w-4xl font-bold" id="normalText">
-          Here are a few past design projects I've worked on.
+          Here are a few past design projects I've worked on.(click to open repository)
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 grid-rows-2 gap-6" >
         {projects.map((project, index) => (
