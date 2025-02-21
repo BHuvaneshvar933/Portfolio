@@ -20,7 +20,7 @@ const Work = () => {
       title: "RecipeSauce(Search recipes)",
       description: "Web Development",
       image: recipesauce,
-      link: "https://github.com/BHuvaneshvar933/gymstore3",
+      link: "https://github.com/BHuvaneshvar933/RecipeSauce",
       size: "large",
       color: "black",
      
