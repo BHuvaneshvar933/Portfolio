@@ -8,7 +8,7 @@ const FeaturesSection = () => (
   <>
     <img
       src="https://mattfarley.ca/img/hero-devices.svg"
-      className="w-full sm:w-2/3 mx-auto mb-8"
+      className="w-full sm:w-2/3 mx-auto mb-8 mt-20"
       alt="Hero Devices"
     />
     <section id="features" className=" py-20 z-50 w-full">
@@ -28,7 +28,7 @@ const FeaturesSection = () => (
           <div
             className="flex flex-col space-y-8 feature-card p-6 bg-gradient-to-br from-neutral-950 to-neutral-900 backdrop-blur-sm shadow-lg hover:shadow-xl transition hoverShadow border-4 border-neutral-300 rounded-2xl md:rounded-l-2xl"
             data-aos="fade-up"
-            data-aos-duration="2000"
+            data-aos-duration="900"
           >
             <div className="flex flex-col items-center space-y-8">
               <LaptopMinimal className="w-16 h-16 lg:w-20 lg:h-20" />
@@ -72,7 +72,7 @@ const FeaturesSection = () => (
           <div
             className="flex flex-col space-y-8 feature-card p-6 bg-gradient-to-br from-neutral-950 to-neutral-900 backdrop-blur-sm shadow-lg hover:shadow-xl transition hoverShadow border-4 border-neutral-300 rounded-2xl md:rounded-r-2xl"
             data-aos="fade-up"
-            data-aos-duration="2000"
+            data-aos-duration="900"
           >
             <div className="flex flex-col items-center space-y-8">
               <SquareTerminal className="w-16 h-16 lg:w-20 lg:h-20" />

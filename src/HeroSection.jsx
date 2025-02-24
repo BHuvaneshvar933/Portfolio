@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const HeroSection = () => (
   <section
     id="home"
@@ -27,11 +27,13 @@ const HeroSection = () => (
       className="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-40"
       alt="Avatar"
     />
-    <a href="#features">
-      <div className="scroll-indicator absolute top-28 md:top-34 ">
-        <div className="arrow"></div>
+    
+    <a href="/work">
+      <div className="scroll-indicator absolute top-28 md:top-34 mb-24 bg-gradient-to-r from-purple-300 to-purple-600 text-transparent bg-clip-text font-extrabold ">
+      <p>My work</p>
       </div>
     </a>
+   
   </section>
 );
 

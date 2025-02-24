@@ -1,6 +1,6 @@
-import React from 'react';
+import React,{useState} from 'react';
 import vreality from "./assets/vreality.png";
-import photo from "./assets/home_page.jpg";
+import chat from "./assets/chat.png";
 import gym from "./assets/Products1_page.jpg";
 import recipesauce from "./assets/recipesauce.png";
 import home from "./assets/home_page.jpg"
@@ -26,10 +26,10 @@ const Work = () => {
      
     },
     {
-      title: "LinkedIn Clone",
+      title: "chatapp",
       description: "Web Development",
-      image: linkedIn,
-      link: "https://github.com/BHuvaneshvar933/Linkedin-Clone",
+      image: chat,
+      link: "https://github.com/BHuvaneshvar933/cha",
       size: "large",
       color: "black",
     },
@@ -41,8 +41,24 @@ const Work = () => {
       
     
     },
+    {
+      title: "Product landing page",
+      description: "Web Development and Design",
+      image: vreality,
+      link: "https://github.com/BHuvaneshvar933/vreality",
+      
+    
+    },
+    {
+      title: "LinkedIn Clone",
+      description: "Web Development",
+      image: linkedIn,
+      link: "https://github.com/BHuvaneshvar933/Linkedin-Clone",
+      size: "large",
+      color: "black",
+    },
   ];
-
+  const [showMore, setShowMore] = useState(false);
   return (
     <>
       <div id="work"></div>
@@ -57,23 +73,15 @@ const Work = () => {
           Here are a few past design projects I've worked on.(click to open repository)
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 grid-rows-2 gap-6" >
-        {projects.map((project, index) => (
+        {projects.slice(0, showMore ? projects.length : 3).map((project, index) => (
   <div
-    data-aos="fade-up" data-aos-duration="2000"
+    
     key={index}
-    className={`${project.size === "large"
-        ? "col-span-1 sm:col-span-2 lg:col-span-2"
-        : "col-span-1"
-      } ${project.color === "black" ? "border-4 border-neutral-900" : "border-4 border-neutral-300"
-      } bg-gray-800 rounded-lg overflow-hidden shadow-md transform transition-all duration-500 hover:scale-110`}
+    className=" bg-transparent rounded-lg overflow-hidden shadow-md transform transition-all duration-500 hover:scale-110"
   >
     <a href={project.link} target="_blank" rel="noopener noreferrer" className="block">
       <div className="relative">
-        <img
-          src={project.image}
-          alt={project.title}
-          className="w-full h-48 sm:h-64 lg:h-96 object-cover transition-all duration-500"
-        />
+        
       </div>
       <div className="p-4 bg-gradient-to-br from-neutral-950 to-neutral-800">
         <h3 className="text-sm sm:text-lg md:text-xl font-semibold">{project.title}</h3>
@@ -82,7 +90,15 @@ const Work = () => {
     </a>
   </div>
 ))}
-
+ {/* Expand Button - Always Last */}
+ <div className="col-span-full flex mx-auto  max-md:mb-14 mb-6">
+            <button
+              className="w-20 h-20 bg-neutral-900 bg-gradient-to-r from-purple-300 to-purple-600 text-transparent bg-clip-text font-extrabold text-6xl  rounded-lg border-4 border-neutral-300 hover:scale-110 transition-transform flex justify-center items-center"
+              onClick={() => setShowMore(!showMore)}
+            >
+              {showMore ? "−" : "+"}
+            </button>
+          </div>
 
         </div>
       </section>
