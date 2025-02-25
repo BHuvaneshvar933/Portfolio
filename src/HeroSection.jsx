@@ -28,7 +28,7 @@ const HeroSection = () => (
       alt="Avatar"
     />
     
-    <a href="/work">
+    <a href="#work">
       <div className="scroll-indicator absolute top-28 md:top-34 mb-24 bg-gradient-to-r from-purple-300 to-purple-600 text-transparent bg-clip-text font-extrabold ">
       <p>My work</p>
       </div>

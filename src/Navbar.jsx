@@ -18,38 +18,35 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex space-x-8">
-        <Link to="/">
+       
           <a
             href="#home"
             className="text-white hover:text-neutral-400 text-sm md:text-lg transition"
           >
             <h1 className="text-xs">01</h1> //Home
           </a>
-        </Link>
-        <Link to="/skills">
+       
           <a
             href="#features"
             className="text-white hover:text-neutral-400 text-sm md:text-lg transition"
           >
             <h1 className="text-xs">02</h1> //Expertise
           </a>
-          </Link>
-          <Link to="/work">
+        
           <a
             href="#work"
             className="text-white hover:text-neutral-400 text-sm md:text-lg transition"
           >
             <h1 className="text-xs">03</h1> //Work
           </a>
-          </Link>
-          <Link to="/experience">
+        
           <a
             href="#experience"
             className="text-white hover:text-neutral-400 text-sm md:text-lg transition"
           >
             <h1 className="text-xs">04</h1> //Experience
           </a>
-          </Link>
+       
           <a
             href="#contact"
             className="text-white hover:text-neutral-400 text-sm md:text-lg transition"
@@ -73,7 +70,7 @@ const Navbar = () => {
       </div>
       {isMenuOpen && (
         <div className="md:hidden bg-neutral-900 bg-opacity-90 absolute top-16 left-0 right-0 z-40 shadow-lg p-6 space-y-6">
-          <Link to="/">
+          
           <a
             href="#home"
             onClick={() => setIsMenuOpen(false)}
@@ -81,8 +78,8 @@ const Navbar = () => {
           >
             01 // Home
           </a>
-          </Link>
-          <Link to="skills">
+        
+          
           <a
             href="#features"
             onClick={() => setIsMenuOpen(false)}
@@ -90,8 +87,8 @@ const Navbar = () => {
           >
             02 // Expertise
           </a>
-          </Link>
-          <Link to="work">
+        
+          
           <a
             href="#work"
             onClick={() => setIsMenuOpen(false)}
@@ -99,8 +96,8 @@ const Navbar = () => {
           >
             03 // Work
           </a>
-          </Link>
-          <Link to="experience">
+          
+         
           <a
             href="#experience"
             onClick={() => setIsMenuOpen(false)}
@@ -108,8 +105,7 @@ const Navbar = () => {
           >
             04 // Experience
           </a>
-          </Link>
-          <Link>
+         
           <a
             href="#contact"
             onClick={() => setIsMenuOpen(false)}
@@ -117,7 +113,7 @@ const Navbar = () => {
           >
             05 // Contact
           </a>
-          </Link>
+         
         </div>
       )}
     </nav>

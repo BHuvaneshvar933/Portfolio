@@ -86,7 +86,7 @@ const FeaturesSection = () => (
             <div className="slideUp text-center flex flex-col md:flex-row md:justify-between md:pr-3 space-y-8 md:space-y-0 ">
               <div>
                 <p className="bg-gradient-to-br text-2xl from-purple-300 to-purple-600 text-transparent bg-clip-text mb-2 font-bold">
-                  Languages I Speak:
+                  Languages I Know:
                 </p>
                 <p className="mb-2 text-xl text-neutral-400">HTML</p>
                 <p className="mb-2 text-xl text-neutral-400">CSS</p>

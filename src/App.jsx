@@ -22,11 +22,11 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<HeroSection/>}/>
-        <Route path="/skills" element={<FeaturesSection/>}/>
-        <Route path="/work" element={<Work/>}/>
-        <Route path="/experience" element={<Experience/>}/>
-        <Route path="/user-form" element={<UserFormPage />} />
+         
       </Routes>
+      <FeaturesSection/>
+         <Work/>
+         <Experience/>
       <Footer/>
     </Router>
   );

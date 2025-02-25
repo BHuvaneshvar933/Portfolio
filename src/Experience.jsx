@@ -21,7 +21,7 @@ const Experience = () => {
                 {experience.map((exp, index) => (
                     <div
                         key={index}
-                        className="rounded-lg bg-gradient-to-br from-neutral-950 to-neutral-800 overflow-hidden shadow-md hover:shadow-xl transform transition duration-300 px-5 py-8 border-2 border-neutral-700 mx-auto max-md:ml-4 "
+                        className="rounded-lg bg-gradient-to-br from-neutral-950 to-neutral-800 overflow-hidden shadow-md hover:shadow-xl transform transition duration-300 px-5 py-8 border-2 border-purple-600 mx-auto max-md:ml-4 "
                          data-aos="fade-up"
             data-aos-duration="900"
                     >
@@ -35,7 +35,7 @@ const Experience = () => {
                             </div>
                             <p className='text-2xl font-bold mt-2 md:mt-0 md:ml-4 bg-gradient-to-br from-purple-300 to-purple-600 text-transparent bg-clip-text'>{exp.duration}</p>
                         </div>
-                        <div className='border-spacing-4 border-2 border-neutral-700 p-4 bg-black rounded-lg'>
+                        <div className='border-spacing-4 border-2 border-purple-600 p-4 bg-black rounded-lg'>
                         <p className='text-lg mb-1.5'>Programming Team</p>
                         <p className="text-sm sm:text-base md:text-lg text-neutral-400 ">{exp.Description}</p>
                         </div>
