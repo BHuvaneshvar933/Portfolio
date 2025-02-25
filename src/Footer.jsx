@@ -31,7 +31,7 @@ const Footer = () => (
           rel="noopener noreferrer"
           className="contact-details"
         >
-          <i className="fa fa-linkedin-square text-purple-600"> Linkedin</i>
+          <i className="fa fa-linkedin-square "> Linkedin</i>
         </a>
         <a
           id="profile-link"
@@ -40,7 +40,7 @@ const Footer = () => (
           rel="noopener noreferrer"
           className="contact-details"
         >
-          <i className="fa fa-twitter text-purple-600"> Twitter</i>
+          <i className="fa fa-twitter "> Twitter</i>
         </a>
         <a
           id="profile-link"
@@ -49,7 +49,7 @@ const Footer = () => (
           rel="noopener noreferrer"
           className="contact-details"
         >
-          <i className="fa fa-github text-purple-600"> GitHub</i>
+          <i className="fa fa-github "> GitHub</i>
         </a>
         <a
           id="profile-link"
@@ -58,7 +58,7 @@ const Footer = () => (
           rel="noopener noreferrer"
           className="contact-details"
         >
-          <i className="fa fa-instagram text-purple-600"> Instagram</i>
+          <i className="fa fa-instagram "> Instagram</i>
         </a>
         
 
