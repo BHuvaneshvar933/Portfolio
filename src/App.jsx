@@ -22,7 +22,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<HeroSection/>}/>
-         
+         <Route path="/user-form" element={<UserFormPage/>}/>
       </Routes>
       <FeaturesSection/>
          <Work/>

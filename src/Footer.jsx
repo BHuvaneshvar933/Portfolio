@@ -31,7 +31,7 @@ const Footer = () => (
           rel="noopener noreferrer"
           className="contact-details"
         >
-          <i className="fa fa-linkedin-square "> Linkedin</i>
+          <i className="fa fa-linkedin-square">Linkedin</i>
         </a>
         <a
           id="profile-link"
