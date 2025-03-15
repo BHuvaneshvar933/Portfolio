@@ -9,10 +9,10 @@ import "animate.css";
 const Work = () => {
   const projects = [
     {
-      title: "Photography-portfolio",
+      title: "Event Managment",
       description: "Web Development",
       image: home,
-      link: "https://github.com/BHuvaneshvar933/Photography_portfolio",
+      link: "https://github.com/BHuvaneshvar933/Event-Management",
      
     },
    
@@ -40,6 +40,13 @@ const Work = () => {
       link: "https://github.com/BHuvaneshvar933/gymstore3",
       
     
+    },
+    {
+      title: "Photography-portfolio",
+      description: "Web Development",
+      image: home,
+      link: "https://github.com/BHuvaneshvar933/Photography_portfolio",
+     
     },
     {
       title: "Product landing page",
