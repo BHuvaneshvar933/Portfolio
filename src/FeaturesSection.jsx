@@ -33,12 +33,12 @@ const FeaturesSection = () => (
             <div className="flex flex-col items-center space-y-8">
               <LaptopMinimal className="w-16 h-16 lg:w-20 lg:h-20" />
               <h3 className="text-2xl lg:text-3xl font-semibold mb-3 bg-gradient-to-br from-purple-300 to-purple-600 text-transparent bg-clip-text text-center">
-                Software Development
+                App Development
               </h3>
             </div>
             <div className="text-center">
   <h3 className="text-2xl lg:text-3xl font-semibold mb-3 text-neutral-400">
-    On a journey to learning Software Development 🏕️
+    On a journey to learning App Development 🏕️
   </h3>
 
   <div className="relative w-full max-w-3xl mx-auto">
