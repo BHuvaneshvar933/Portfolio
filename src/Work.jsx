@@ -27,10 +27,10 @@ const Work = () => {
        domain: "Web development"
     },
     {
-      title: "Chat App",
-      description: "A real-time chat application using WebSockets where users can create rooms and chat instantly.",
-      image: chat,
-      link: "https://github.com/BHuvaneshvar933/cha",
+      title: "Airbnb Clone",
+      description: "A clone of Airbnb's feed and profile system with user authentication and post interactions.",
+      image: air,
+      link: "https://github.com/BHuvaneshvar933/AirBnb_clone",
        domain: "Web development"
     },
     {
@@ -54,13 +54,14 @@ const Work = () => {
       link: "https://github.com/BHuvaneshvar933/vreality",
        domain: "Web development"
     },
+    
     {
-      title: "Airbnb Clone",
-      description: "A clone of Airbnb's feed and profile system with user authentication and post interactions.",
-      image: air,
-      link: "https://github.com/BHuvaneshvar933/AirBnb_clone",
+      title: "Chat App",
+      description: "A real-time chat application using WebSockets where users can create rooms and chat instantly.",
+      image: chat,
+      link: "https://github.com/BHuvaneshvar933/cha",
        domain: "Web development"
-    },
+    }
   ], []);
 
   const visibleProjects = showMore ? projects : projects.slice(0, 4);
