@@ -4,7 +4,7 @@ import chat from "./assets/chat.webp";
 import gym from "./assets/Products1_page.webp";
 import recipesauce from "./assets/recipesauce.webp";
 import home from "./assets/home_page.webp";
-import linkedIn from "./assets/linkedin.webp";
+import air from "./assets/book.png";
 import event from "./assets/event.webp"
 import "animate.css";
 
@@ -55,10 +55,10 @@ const Work = () => {
        domain: "Web development"
     },
     {
-      title: "LinkedIn Clone",
-      description: "A clone of LinkedIn's feed and profile system with user authentication and post interactions.",
-      image: linkedIn,
-      link: "https://github.com/BHuvaneshvar933/Linkedin-Clone",
+      title: "Airbnb Clone",
+      description: "A clone of Airbnb's feed and profile system with user authentication and post interactions.",
+      image: air,
+      link: "https://github.com/BHuvaneshvar933/AirBnb_clone",
        domain: "Web development"
     },
   ], []);
