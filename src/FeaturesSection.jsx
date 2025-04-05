@@ -11,13 +11,12 @@ const FeaturesSection = () => (
       className="w-full sm:w-2/3 mx-auto mb-8 mt-20"
       alt="Hero Devices"
     />
-    <section id="features" className=" py-20 z-50 w-full">
+    <section id="features" className=" py-20 z-50 w-full ">
       <div className="container mx-auto px-4 text-center">
         <h2
           className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-12 fadeInBottom"
           id="heading"
-          data-aos="fade-up"
-          data-aos-duration="2000"
+          
         >
           My{" "}
           <span className="bg-gradient-to-br from-purple-300 to-purple-600 text-transparent bg-clip-text">
@@ -26,9 +25,8 @@ const FeaturesSection = () => (
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div
-            className="flex flex-col space-y-8 feature-card p-6 bg-gradient-to-br from-neutral-950 to-neutral-900 backdrop-blur-sm shadow-lg hover:shadow-xl transition hoverShadow border-4 border-neutral-300 rounded-2xl md:rounded-l-2xl"
-            data-aos="fade-up"
-            data-aos-duration="900"
+            className="flex flex-col space-y-8 feature-card p-6 bg-gradient-to-br from-neutral-950 to-neutral-900 backdrop-blur-sm shadow-lg hover:shadow-xl transition will-change-transform hoverShadow border-4 border-neutral-300 rounded-2xl md:rounded-l-2xl"
+          
           >
             <div className="flex flex-col items-center space-y-8">
               <LaptopMinimal className="w-16 h-16 lg:w-20 lg:h-20" />
@@ -70,9 +68,8 @@ const FeaturesSection = () => (
 
           {/* Web Developer Card */}
           <div
-            className="flex flex-col space-y-8 feature-card p-6 bg-gradient-to-br from-neutral-950 to-neutral-900 backdrop-blur-sm shadow-lg hover:shadow-xl transition hoverShadow border-4 border-neutral-300 rounded-2xl md:rounded-r-2xl"
-            data-aos="fade-up"
-            data-aos-duration="900"
+            className="flex flex-col space-y-8 feature-card p-6 bg-gradient-to-br from-neutral-950 to-neutral-900 backdrop-blur-sm shadow-lg hover:shadow-xl transition will-change-transform hoverShadow border-4 border-neutral-300 rounded-2xl md:rounded-r-2xl"
+           
           >
             <div className="flex flex-col items-center space-y-8">
               <SquareTerminal className="w-16 h-16 lg:w-20 lg:h-20" />

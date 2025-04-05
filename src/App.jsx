@@ -18,7 +18,9 @@ AOS.init();
 const App = () => {
   return (
     <Router>
+      
       <ParticleBackground />
+   
       <Navbar />
       <Routes>
         <Route path="/" element={<><HeroSection/><FeaturesSection/><Work/><Experience/></>}/>

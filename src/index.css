@@ -316,3 +316,9 @@ footer {
 #tile.animate-zoom {
   animation: zoomIn 0.8s ease forwards;
 }
+
+#particle-canvas canvas {
+  display: block;
+  pointer-events: none;
+}
+

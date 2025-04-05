@@ -21,9 +21,8 @@ const Experience = () => {
                 {experience.map((exp, index) => (
                     <div
                         key={index}
-                        className="rounded-lg bg-gradient-to-br from-neutral-950 to-neutral-800 overflow-hidden shadow-md hover:shadow-xl transform transition duration-300 px-5 py-8 border-2 border-purple-600 mx-auto max-md:ml-4 "
-                         data-aos="fade-up"
-            data-aos-duration="900"
+                        className="rounded-lg bg-gradient-to-br from-neutral-950 to-neutral-800 overflow-hidden shadow-md hover:shadow-xl transform transition will-change-transform duration-300 px-5 py-8 border-2 border-purple-600 mx-auto max-md:ml-4 "
+                        
                     >
                         <div className="p-4 flex flex-col md:flex-row">
                             <img src={exp.image} alt={exp.title} className='w-14 h-14 border-8 border-double border-purple-600 rounded-lg mb-4 md:mb-0 md:mr-3' />
