@@ -13,46 +13,53 @@ const Work = () => {
 
   const projects = useMemo(() => [
     {
-      title: "Event Management",
-      description: "Web Development",
+      title: "Event Management System",
+      description: "A complete event registration and management platform with user login, QR check-in, and admin dashboard.",
       image: event,
       link: "https://github.com/BHuvaneshvar933/Event-Management",
+      domain: "Web development"
     },
     {
-      title: "RecipeSauce (Search Recipes)",
-      description: "Web Development",
+      title: "RecipeSauce",
+      description: "A dynamic recipe search engine using an API to fetch thousands of recipes based on ingredients or meal types.",
       image: recipesauce,
       link: "https://github.com/BHuvaneshvar933/RecipeSauce",
+       domain: "Web development"
     },
     {
       title: "Chat App",
-      description: "Web Development",
+      description: "A real-time chat application using WebSockets where users can create rooms and chat instantly.",
       image: chat,
       link: "https://github.com/BHuvaneshvar933/cha",
+       domain: "Web development"
     },
     {
       title: "E-commerce Gym Website",
-      description: "Web Development",
+      description: "A modern gym store platform with product catalog, details, and cart functionality using React and MongoDB.",
       image: gym,
       link: "https://github.com/BHuvaneshvar933/gymstore3",
+       domain: "Web development"
     },
     {
       title: "Photography Portfolio",
-      description: "Web Development",
+      description: "A clean and minimalist portfolio website for photographers to showcase their work with elegant design.",
       image: home,
       link: "https://github.com/BHuvaneshvar933/Photography_portfolio",
+       domain: "Web development"
     },
     {
-      title: "Product Landing Page",
-      description: "Web Development and Design",
+      title: "Virtual Reality Landing Page",
+      description: "A stylish landing page for a VR product, highlighting features, benefits, and call-to-action sections.",
       image: vreality,
       link: "https://github.com/BHuvaneshvar933/vreality",
+       domain: "Web development"
     },
     {
       title: "LinkedIn Clone",
-      description: "Web Development",
+      description: "A clone of LinkedIn's feed and profile system with user authentication and post interactions.",
       image: linkedIn,
       link: "https://github.com/BHuvaneshvar933/Linkedin-Clone",
+       domain: "Web development"
     },
   ], []);
 
@@ -92,12 +99,16 @@ const Work = () => {
                     className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
-                <div className="p-4 bg-gradient-to-br from-neutral-950 to-neutral-800">
-                  <h3 className="text-sm sm:text-lg md:text-xl font-semibold">
+                <div className="p-4 bg-gradient-to-br from-neutral-950 to-neutral-800 rounded-lg h-48">
+                  <h3 className="text-xl sm:text-lg md:text-2xl  bg-gradient-to-r from-purple-400 to-purple-600 text-transparent bg-clip-text font-extrabold">
                     {project.title}
                   </h3>
-                  <p className="text-sm sm:text-base md:text-lg text-gray-400">
+                  <h3 className="w-12 mt-2 h-1 bg-neutral-300 rounded-lg"></h3>
+                  <p className="text-sm mt-2 sm:text-base md:text-base text-gray-400">
                     {project.description}
+                  </p>
+                  <p className="text-sm mt-2 sm:text-base md:text-lg text-gray-100">
+                    {project.domain}
                   </p>
                 </div>
               </a>
