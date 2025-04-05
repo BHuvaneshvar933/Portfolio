@@ -5,6 +5,7 @@ import gym from "./assets/Products1_page.webp";
 import recipesauce from "./assets/recipesauce.webp";
 import home from "./assets/home_page.webp";
 import linkedIn from "./assets/linkedin.webp";
+import event from "./assets/event.webp"
 import "animate.css";
 
 const Work = () => {
@@ -14,7 +15,7 @@ const Work = () => {
     {
       title: "Event Management",
       description: "Web Development",
-      image: home,
+      image: event,
       link: "https://github.com/BHuvaneshvar933/Event-Management",
     },
     {
