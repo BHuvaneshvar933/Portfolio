@@ -25,7 +25,7 @@ const HeroSection = () => (
 
     {/* Resume Button */}
     <a
-  href="public/C-Bhuvaneshvar-Reddy-Resume.pdf"
+  href="/C-Bhuvaneshvar-Reddy-Resume.pdf"
   download
   className="px-4 mt-4 py-3 w-full md:w-40 shadow-md hover:bg-purple-700 transition bg-white rounded-full text-lg font-semibold hoverScale bg-gradient-to-r from-purple-500 to-purple-900 text-white shadow-neon hover:shadow-neon-hover"
   id="neon-button"
