@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const HeroSection = () => (
   <section
     id="home"
-    className="w-full hero bg-gradient-to-r text-white h-screen flex flex-col justify-center items-center text-center relative px-7 mt-24 max-sm:mt-5"
+    className="w-full hero bg-gradient-to-r text-white h-screen flex flex-col justify-center items-center text-center relative px-7 mt-24 max-sm:mt-28"
   >
     <h1
       className="text-5xl sm:text-6xl font-extrabold leading-tight mb-6 fadeIn"
