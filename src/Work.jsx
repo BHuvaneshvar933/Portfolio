@@ -83,7 +83,7 @@ const Work = () => {
     <>
       <div id="work"></div>
       <section className="text-white w-full py-12 px-4 md:px-12 lg:px-40 mt-10">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8" id="heading">
           My{" "}
           <span className="bg-gradient-to-r from-purple-400 to-purple-600 text-transparent bg-clip-text font-extrabold">
             Projects
