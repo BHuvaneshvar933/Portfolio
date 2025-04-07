@@ -14,7 +14,7 @@ const Work = () => {
   const projects = useMemo(() => [
     {
       title: "Event Management System",
-      description: "A complete event registration and management platform with user login, QR check-in, and admin dashboard.",
+      description: "A complete event registration and management platform with user login, QR check-in, and admin dashboard.(Backend is not deployed properly due to issues with Render)",
       Tech_Stack: "React.js, Tailwind CSS, MongoDB",
       image: event,
       demo:"https://event-management-dusky.vercel.app",
@@ -41,7 +41,7 @@ const Work = () => {
     },
     {
       title: "E-commerce Gym Website",
-      description: "A modern gym store platform with product catalog, details, and cart functionality using React and MongoDB.",
+      description: "A modern gym store platform with product catalog, details, and cart functionality using React and MongoDB.(Backend is not deployed properly due to issues with Render)",
       Tech_Stack: "React.js, Tailwind CSS, MongoDB",
       image: gym,
       demo:"https://gymstore3.vercel.app",
