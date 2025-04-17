@@ -12,6 +12,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import Work from "./Work";
 import Experience from "./Experience";
+import Sidebar from "./Sidebar"
 
 AOS.init();
 
@@ -22,6 +23,7 @@ const App = () => {
       <ParticleBackground />
    
       <Navbar />
+      <Sidebar />
       <Routes>
         <Route path="/" element={<><HeroSection/><FeaturesSection/><Work/><Experience/></>}/>
          <Route path="/user-form" element={<UserForm/>}/>
