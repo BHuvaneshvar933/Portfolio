@@ -10,6 +10,11 @@ import "animate.css";
 
 const Work = () => {
   const [showMore, setShowMore] = useState(false);
+  const [loadedImages, setLoadedImages] = useState({});
+
+  const handleImageLoad = (id) => {
+    setLoadedImages(prev => ({...prev, [id]: true}));
+  };
 
   const projects = useMemo(() => [
     {
@@ -97,20 +102,25 @@ const Work = () => {
           {visibleProjects.map((project, index) => (
             <div
               key={index}
-              className="rounded-lg overflow-hidden shadow-md transition-transform"
+              className="rounded-lg overflow-hidden shadow-md transition-transform card"
             >
               <a
-                
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block"
               >
-                <div className="relative w-full h-60 overflow-hidden group">
+                <div className="relative w-full h-60 overflow-hidden group bg-neutral-900">
+                  {!loadedImages[index] && (
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="w-10 h-10 border-4 border-purple-600 border-t-transparent rounded-full animate-spin"></div>
+                    </div>
+                  )}
                   <img
                     src={project.image}
-                    alt={project.title}
-                   
-                    className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-105"
+                    alt={`Screenshot of ${project.title} project showing ${project.description.split('.')[0]}`}
+                    onLoad={() => handleImageLoad(index)}
+                    className={`object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-105 ${!loadedImages[index] ? 'opacity-0' : 'opacity-100'}`}
+                    style={{ transition: 'opacity 0.3s ease-in-out' }}
                   />
                 </div>
                 <div className="p-4 bg-gradient-to-br from-neutral-950 to-neutral-800 rounded-lg ">
@@ -152,7 +162,7 @@ const Work = () => {
 
           <div className="col-span-full flex justify-center items-center mt-4">
             <button
-              className="w-16 h-16 text-4xl text-purple-600 font-bold hover:scale-110 transition-transform"
+              className="w-16 h-16 text-4xl font-bold hover:scale-110 transition-transform plus-symbol"
               onClick={() => setShowMore(!showMore)}
               aria-label={showMore ? "Show Less Projects" : "Show More Projects"}
             >

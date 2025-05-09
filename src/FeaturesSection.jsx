@@ -10,7 +10,7 @@ const FeaturesSection = () => (
       className="w-full sm:w-2/3 mx-auto mb-8 mt-20"
       alt="Hero Devices"
     />
-    <section id="features" className="py-20 z-50 w-full">
+    <section id="features" className="py-20  w-full">
       <div className="container mx-auto px-4 text-center">
         <h2
           className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-12 fadeInBottom"
@@ -61,30 +61,81 @@ const FeaturesSection = () => (
               </p>
             </div>
 
-            <div className="slideUp text-center flex flex-col md:flex-row md:justify-between gap-6">
-              <div>
-                <p className="bg-gradient-to-br text-2xl from-purple-300 to-purple-600 text-transparent bg-clip-text mb-2 font-bold">
-                  Languages I Know:
-                </p>
-                <p className="mb-2 text-xl text-neutral-400">HTML</p>
-                <p className="mb-2 text-xl text-neutral-400">CSS</p>
-                <p className="mb-2 text-xl text-neutral-400">Git</p>
-                <p className="mb-2 text-xl text-neutral-400">JavaScript</p>
-              </div>
-              <div>
-                <p className="bg-gradient-to-br text-2xl from-purple-300 to-purple-600 text-transparent bg-clip-text mb-2 font-bold">
-                  Dev Tools:
-                </p>
-                <p className="mb-2 text-xl text-neutral-400">Tailwind CSS</p>
-                <p className="mb-2 text-xl text-neutral-400">React.js</p>
-                <p className="mb-2 text-xl text-neutral-400">Node.js</p>
-                <p className="mb-2 text-xl text-neutral-400">Express.js</p>
-                <p className="mb-2 text-xl text-neutral-400">MongoDB</p>
-                <p className="mb-2 text-xl text-neutral-400">Netlify</p>
-                <p className="mb-2 text-xl text-neutral-400">Vercel</p>
-                <p className="mb-2 text-xl text-neutral-400">VS Code</p>
-                <p className="mb-2 text-xl text-neutral-400">GitHub</p>
-                <p className="mb-2 text-xl text-neutral-400">Vite</p>
+            <div className="slideUp text-center mt-6">
+              <h4 className="bg-gradient-to-br text-2xl from-purple-300 to-purple-600 text-transparent bg-clip-text mb-6 font-bold">
+                My Tech Stack
+              </h4>
+              
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                {/* Languages */}
+                <div className="bg-neutral-900/50 p-4 rounded-lg border border-purple-600/30 hover:border-purple-600 transition-colors">
+                  <h5 className="text-purple-300 font-semibold mb-3">Languages</h5>
+                  <div className="flex flex-wrap justify-center gap-2">
+                    <span className="px-3 py-1 bg-neutral-800 rounded-full text-sm text-neutral-300">HTML</span>
+                    <span className="px-3 py-1 bg-neutral-800 rounded-full text-sm text-neutral-300">CSS</span>
+                    <span className="px-3 py-1 bg-neutral-800 rounded-full text-sm text-neutral-300">JavaScript</span>
+                    <span className="px-3 py-1 bg-neutral-800 rounded-full text-sm text-neutral-300">TypeScript</span>
+                  </div>
+                </div>
+                
+                {/* Frameworks */}
+                <div className="bg-neutral-900/50 p-4 rounded-lg border border-purple-600/30 hover:border-purple-600 transition-colors">
+                  <h5 className="text-purple-300 font-semibold mb-3">Frameworks</h5>
+                  <div className="flex flex-wrap justify-center gap-2">
+                    <span className="px-3 py-1 bg-neutral-800 rounded-full text-sm text-neutral-300">React.js</span>
+                    <span className="px-3 py-1 bg-neutral-800 rounded-full text-sm text-neutral-300">Next.js</span>
+                    <span className="px-3 py-1 bg-neutral-800 rounded-full text-sm text-neutral-300">Node.js</span>
+                    <span className="px-3 py-1 bg-neutral-800 rounded-full text-sm text-neutral-300">Express.js</span>
+                    <span className="px-3 py-1 bg-neutral-800 rounded-full text-sm text-neutral-300">Tailwind CSS</span>
+                  </div>
+                </div>
+                
+                {/* Tools */}
+                <div className="bg-neutral-900/50 p-4 rounded-lg border border-purple-600/30 hover:border-purple-600 transition-colors">
+                  <h5 className="text-purple-300 font-semibold mb-3">Tools</h5>
+                  <div className="flex flex-wrap justify-center gap-2">
+                    <span className="px-3 py-1 bg-neutral-800 rounded-full text-sm text-neutral-300">Git</span>
+                    <span className="px-3 py-1 bg-neutral-800 rounded-full text-sm text-neutral-300">VS Code</span>
+                    <span className="px-3 py-1 bg-neutral-800 rounded-full text-sm text-neutral-300">GitHub</span>
+                    <span className="px-3 py-1 bg-neutral-800 rounded-full text-sm text-neutral-300">Vite</span>
+                  </div>
+                </div>
+                
+                {/* Databases */}
+                <div className="bg-neutral-900/50 p-4 rounded-lg border border-purple-600/30 hover:border-purple-600 transition-colors">
+                  <h5 className="text-purple-300 font-semibold mb-3">Databases</h5>
+                  <div className="flex flex-wrap justify-center gap-2">
+                    <span className="px-3 py-1 bg-neutral-800 rounded-full text-sm text-neutral-300">MongoDB</span>
+                  </div>
+                </div>
+                
+                {/* Deployment */}
+                <div className="bg-neutral-900/50 p-4 rounded-lg border border-purple-600/30 hover:border-purple-600 transition-colors">
+                  <h5 className="text-purple-300 font-semibold mb-3">Deployment</h5>
+                  <div className="flex flex-wrap justify-center gap-2">
+                    <span className="px-3 py-1 bg-neutral-800 rounded-full text-sm text-neutral-300">Netlify</span>
+                    <span className="px-3 py-1 bg-neutral-800 rounded-full text-sm text-neutral-300">Vercel</span>
+                  </div>
+                </div>
+                
+                {/* Skill Level */}
+                <div className="bg-neutral-900/50 p-4 rounded-lg border border-purple-600/30 hover:border-purple-600 transition-colors">
+                  <h5 className="text-purple-300 font-semibold mb-3">Experience</h5>
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs text-neutral-400">Frontend</span>
+                      <div className="flex-1 bg-neutral-800 h-2 rounded-full">
+                        <div className="bg-gradient-to-r from-purple-400 to-purple-600 h-2 rounded-full w-4/5"></div>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs text-neutral-400">Backend</span>
+                      <div className="flex-1 bg-neutral-800 h-2 rounded-full">
+                        <div className="bg-gradient-to-r from-purple-400 to-purple-600 h-2 rounded-full w-3/5"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

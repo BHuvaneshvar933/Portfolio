@@ -14,21 +14,29 @@ import Work from "./Work";
 import Experience from "./Experience";
 import Sidebar from "./Sidebar"
 
-AOS.init();
+AOS.init({
+  // Global AOS settings for consistent animations
+  duration: 800,
+  easing: 'ease-in-out',
+  once: true,
+  offset: 50,
+});
 
 const App = () => {
   return (
     <Router>
-      
+      <a href="#main-content" className="skip-link">
+        Skip to main content
+      </a>
       <ParticleBackground />
-   
       <Navbar />
       <Sidebar />
-      <Routes>
-        <Route path="/" element={<><HeroSection/><FeaturesSection/><Work/><Experience/></>}/>
-         <Route path="/user-form" element={<UserForm/>}/>
-      </Routes>
-     
+      <main id="main-content" className="page-container">
+        <Routes>
+          <Route path="/" element={<><HeroSection/><FeaturesSection/><Work/><Experience/></>}/>
+          <Route path="/user-form" element={<UserForm/>}/>
+        </Routes>
+      </main>
       <Footer/>
     </Router>
   );

@@ -9,9 +9,15 @@ const ParticleBackground = () => {
     let windowHalfX = window.innerWidth / 2;
     let windowHalfY = window.innerHeight / 2;
     let animationId;
-    let lastTime = 0; // ✅ Moved here to fix the ReferenceError
+    let lastTime = 0;
 
     const container = document.getElementById("particle-canvas");
+
+    // Check if device is low-end (simplified check based on mobile or low memory)
+    const isLowEndDevice = () => {
+      return window.navigator.userAgent.match(/Mobile|Android/) || 
+             (navigator.deviceMemory && navigator.deviceMemory < 4);
+    };
 
     init();
     animate();
@@ -32,7 +38,10 @@ const ParticleBackground = () => {
       const vertices = [];
       const size = 2000;
 
-      for (let i = 0; i < 3000; i++) {
+      // Adjust particle count based on device capability
+      const particleCount = isLowEndDevice() ? 1000 : 3000;
+
+      for (let i = 0; i < particleCount; i++) {
         const x = (Math.random() * size - size / 2);
         const y = (Math.random() * size - size / 2);
         const z = (Math.random() * size - size / 2);
@@ -87,19 +96,39 @@ const ParticleBackground = () => {
 
     function animate(time) {
       animationId = requestAnimationFrame(animate);
-
-      if (time - lastTime > 16) {
+      
+      // Check if device is on battery (if supported)
+      const isBatteryPowered = navigator.getBattery ? 
+        (navigator.getBattery().then(battery => battery.charging === false)) : false;
+      
+      // Adjust frame rate based on battery status
+      const frameDelay = isBatteryPowered ? 32 : 16; // 30fps vs 60fps
+      
+      if (time - lastTime > frameDelay) {
         render();
         lastTime = time;
       }
     }
 
     function render() {
-      camera.position.x += (mouseX * 2 - camera.position.x) * 0.02;
-      camera.position.y += (-mouseY * 2 - camera.position.y) * 0.02;
-      camera.lookAt(scene.position);
-      scene.rotation.x += 0.001;
-      scene.rotation.y += 0.002;
+      // Check for reduced motion preference
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      
+      // Apply slower/reduced motion if user prefers it
+      if (prefersReducedMotion) {
+        camera.position.x += (mouseX * 0.5 - camera.position.x) * 0.01;
+        camera.position.y += (-mouseY * 0.5 - camera.position.y) * 0.01;
+        camera.lookAt(scene.position);
+        scene.rotation.x += 0.0002;
+        scene.rotation.y += 0.0004;
+      } else {
+        camera.position.x += (mouseX * 2 - camera.position.x) * 0.02;
+        camera.position.y += (-mouseY * 2 - camera.position.y) * 0.02;
+        camera.lookAt(scene.position);
+        scene.rotation.x += 0.001;
+        scene.rotation.y += 0.002;
+      }
+      
       renderer.render(scene, camera);
     }
 
