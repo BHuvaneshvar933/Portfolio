@@ -13,6 +13,7 @@ import 'aos/dist/aos.css';
 import Work from "./Work";
 import Experience from "./Experience";
 import Sidebar from "./Sidebar"
+import ProjectDetails from "./ProjectDetails";
 
 AOS.init({
   // Global AOS settings for consistent animations
@@ -35,6 +36,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<><HeroSection/><FeaturesSection/><Work/><Experience/></>}/>
           <Route path="/user-form" element={<UserForm/>}/>
+          <Route path="/projects/:id" element={<ProjectDetails />} />
         </Routes>
       </main>
       <Footer/>

@@ -7,6 +7,7 @@ import home from "./assets/home_page.webp";
 import air from "./assets/book.png";
 import event from "./assets/event.webp";
 import xo from "./assets/xo.jpeg";
+import shop from "./assets/shop.png";
 import "animate.css";
 
 const Work = () => {
@@ -51,13 +52,13 @@ const Work = () => {
         domain: "Web development",
       },
       {
-        title: "E-commerce Gym Website",
+        title: "E-commerce Website",
         description:
-          "A modern gym store platform with product catalog, details, and cart functionality using React and MongoDB.(Backend is not deployed properly due to issues with Render)",
+          "A modern e-commerce store platform with product catalog, details, and cart functionality using React and MongoDB.(Products are not present due to limits reached in firebase)",
         Tech_Stack: "React.js, Tailwind CSS, MongoDB",
-        image: gym,
-        demo: "https://gymstore3.vercel.app",
-        link: "https://github.com/BHuvaneshvar933/gymstore3",
+        image: shop,
+        demo: "https://e-commerce-five-dun-43.vercel.app",
+        link: "https://github.com/BHuvaneshvar933/E-commerce",
         domain: "Web development",
       },
       {
@@ -193,6 +194,13 @@ const Work = () => {
                     >
                       GitHub
                     </a>
+                    {/* <a
+  href={`/projects/${project.slug}`}
+  className="px-4 py-2 border border-gray-400 text-white hover:bg-gray-800 rounded-lg shadow-md transition duration-300"
+>
+  More Info
+</a> */}
+
                   </div>
                 </div>
               </a>
