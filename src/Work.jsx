@@ -44,10 +44,10 @@ const Work = () => {
       {
         title: "Airbnb Clone",
         description:
-          "A clone of Airbnb's feed and profile system with user authentication and post interactions.(The link expired)",
+          "A clone of Airbnb's feed and profile system with user authentication and post interactions.",
         Tech_Stack: "React.js, Tailwind CSS, MongoDB",
         image: air,
-        demo: "https://ease-nest.netlify.app",
+        demo: "https://abproject-sclone.vercel.app/",
         link: "https://github.com/BHuvaneshvar933/AirBnb_clone",
         domain: "Web development",
       },
