@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const HeroSection = () => (
   <section
     id="home"
-    className="w-full hero bg-gradient-to-r text-white min-h-screen flex flex-col justify-center items-center relative px-7 py-20"
+    className="w-full mt-10 hero bg-gradient-to-r text-white min-h-screen flex flex-col justify-center items-center relative px-7 py-20"
   >
     <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       {/* Left column - Text content */}
@@ -23,7 +23,7 @@ const HeroSection = () => (
           className="text-base sm:text-lg slideUp text-neutral-400 max-w-xl font-bold"
           id="normalText"
         >
-          I'm a web developer and freelance web designer with experience building responsive, user-focused websites using React, Tailwind CSS, and MongoDB. I've worked with real clients, including e-commerce and portfolio projects, delivering functional and visually appealing websites.
+          I develop scalable web and mobile applications and am passionate about integrating AI and blockchain into real-world systems. My core stack includes MERN, Spring Boot, and EVM smart contracts.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 mt-6">
@@ -52,16 +52,12 @@ const HeroSection = () => (
       </div>
       
       {/* Right column - Image */}
-      <div className="flex justify-center items-center order-1 md:order-2 mb-8 md:mb-0">
-        <div className="relative">
-          <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-purple-900/20 rounded-full blur-xl"></div>
-          <img
-            src="https://mattfarley.ca/img/mf-avatar.svg"
-            className="w-48 h-48 sm:w-64 sm:h-64 relative z-10"
-            alt="Avatar"
-          />
-        </div>
-      </div>
+      <img
+   src="https://mattfarley.ca/img/hero-devices.svg"
+   className="w-full sm:w-11/12 mx-auto mb-8 mt-20"
+   alt="Hero Devices"
+ />
+      
     </div>
     
     {/* Scroll indicator */}

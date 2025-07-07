@@ -113,7 +113,7 @@ const Work = () => {
   return (
     <>
       <div id="work"></div>
-      <section className="text-white w-full py-12 px-4 md:px-12 lg:px-40 mt-10">
+      <section className="text-white   mt-10">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8" id="heading">
           My{" "}
           <span className="bg-gradient-to-r from-purple-400 to-purple-600 text-transparent bg-clip-text font-extrabold">
@@ -122,7 +122,7 @@ const Work = () => {
         </h2>
 
         {/* Category Filter */}
-        <div className="flex justify-center gap-4 mb-10 flex-wrap">
+        <div className="flex justify-center gap-4 mb-10 flex-wrap ">
           {["All", "Web development", "App development"].map((category) => (
             <button
               key={category}
@@ -138,7 +138,7 @@ const Work = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6 ">
           {visibleProjects.map((project, index) => (
             <div
               key={index}

@@ -26,9 +26,9 @@ const Experience = () => {
               </div>
 
               {/* Content card */}
-              <div className="mt-10 md:mt-0 md:ml-0 md:w-1/2 md:pr-8 md:text-right w-full">
+              <div className="mt-10 md:mt-0 md:ml-0 md:w-1/2 md:pr-8  w-full">
                 <div className="bg-gradient-to-br from-neutral-950 to-neutral-900 p-4 sm:p-6 rounded-xl shadow-lg border border-purple-600/30 hover:border-purple-600 transition-colors">
-                  <div className="flex flex-col md:flex-row md:justify-between mb-4 text-center md:text-right">
+                  <div className="flex flex-col md:flex-row md:justify-between mb-4 ">
                     <h3 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-purple-300 to-purple-600 text-transparent bg-clip-text">
                       Freelance Web Developer
                     </h3>
@@ -38,31 +38,37 @@ const Experience = () => {
                     </span>
                   </div>
 
-                  <p className="text-neutral-300 mb-4 text-center md:text-right text-sm sm:text-base">
+                  <p className="text-neutral-300 mb-4  text-sm sm:text-base">
                     I have successfully completed five freelance projects in web development, delivering custom websites for clients including a gym e-commerce platform and a photography portfolio. My work involved both frontend and backend development using technologies like React.js, Tailwind CSS, Node.js, and MongoDB. These projects helped me enhance my skills, meet client expectations, and manage real-world deadlines effectively.
                   </p>
 
                   <div className="mt-6">
-                    <h4 className="text-purple-400 font-semibold mb-2 text-center md:text-right">Key Projects:</h4>
-                    <ul className="space-y-2">
-                      <li className="flex items-start justify-center md:justify-end md:flex-row-reverse text-center md:text-right">
-                        <span className="text-neutral-300">Gym E-commerce Platform with product management and payment integration</span>
-                        <Code size={16} className="mr-2 md:ml-2 md:mr-0 mt-1 text-purple-500 flex-shrink-0" />
-                      </li>
-                      <li className="flex items-start justify-center md:justify-end md:flex-row-reverse text-center md:text-right">
-                        <span className="text-neutral-300">Photography Portfolio with gallery and booking system</span>
-                        <Code size={16} className="mr-2 md:ml-2 md:mr-0 mt-1 text-purple-500 flex-shrink-0" />
-                      </li>
-                      <li className="flex items-start justify-center md:justify-end md:flex-row-reverse text-center md:text-right">
-                        <span className="text-neutral-300">Personal portfolio websites with custom animations</span>
-                        <Code size={16} className="mr-2 md:ml-2 md:mr-0 mt-1 text-purple-500 flex-shrink-0" />
-                      </li>
-                    </ul>
-                  </div>
+  <h4 className="text-purple-400 font-semibold mb-2 text-center md:text-right">
+    Key Projects:
+  </h4>
+  <ul className="space-y-3">
+    {[
+      "Gym E-commerce Platform with product management and payment integration",
+      "Photography Portfolio with gallery and booking system",
+      "Personal portfolio websites with custom animations",
+    ].map((project, index) => (
+      <li
+        key={index}
+        className="flex items-start justify-center md:justify-end gap-2 md:gap-3 text-center md:text-right"
+      >
+        <span className="text-neutral-300 text-sm sm:text-base max-w-xs">
+          {project}
+        </span>
+        <Code size={16} className="text-purple-500 mt-1 shrink-0" />
+      </li>
+    ))}
+  </ul>
+</div>
+
 
                   <div className="mt-6">
-                    <h4 className="text-purple-400 font-semibold mb-2 text-center md:text-right">Skills Applied:</h4>
-                    <div className="flex flex-wrap gap-2 justify-center md:justify-end">
+                    <h4 className="text-purple-400 font-semibold mb-2 ">Skills Applied:</h4>
+                    <div className="flex flex-wrap gap-2 justify-center">
                       <span className="px-3 py-1 bg-neutral-800 rounded-full text-xs text-neutral-300">React.js</span>
                       <span className="px-3 py-1 bg-neutral-800 rounded-full text-xs text-neutral-300">Tailwind CSS</span>
                       <span className="px-3 py-1 bg-neutral-800 rounded-full text-xs text-neutral-300">Node.js</span>

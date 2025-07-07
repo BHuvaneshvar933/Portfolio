@@ -25,7 +25,13 @@ const Navbar = () => {
           >
             <h1 className="text-xs">01</h1> //Home
           </a>
-       
+        <a
+            href="#about"
+            
+            className="text-white hover:text-neutral-400 text-sm md:text-lg transition"
+          >
+           <h1 className="text-xs">02</h1>// About
+          </a>
           <a
             href="#features"
             className="text-white hover:text-neutral-400 text-sm md:text-lg transition"
@@ -79,7 +85,13 @@ const Navbar = () => {
             01 // Home
           </a>
         
-          
+            <a
+            href="#about"
+            onClick={() => setIsMenuOpen(false)}
+            className="block text-gray-300 hover:text-white text-lg transition"
+          >
+            02 // About
+          </a>
           <a
             href="#features"
             onClick={() => setIsMenuOpen(false)}

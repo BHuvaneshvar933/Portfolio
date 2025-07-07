@@ -14,6 +14,8 @@ import Work from "./Work";
 import Experience from "./Experience";
 import Sidebar from "./Sidebar"
 import ProjectDetails from "./ProjectDetails";
+import AboutMe from "./aboutMe";
+import DeveloperStats from "./DeveloperStats";
 
 AOS.init({
   // Global AOS settings for consistent animations
@@ -34,7 +36,7 @@ const App = () => {
       <Sidebar />
       <main id="main-content" className="page-container">
         <Routes>
-          <Route path="/" element={<><HeroSection/><FeaturesSection/><Work/><Experience/></>}/>
+          <Route path="/" element={<><HeroSection/><AboutMe/><DeveloperStats/><FeaturesSection/><Work/><Experience/></>}/>
           <Route path="/user-form" element={<UserForm/>}/>
           <Route path="/projects/:id" element={<ProjectDetails />} />
         </Routes>
