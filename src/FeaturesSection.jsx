@@ -2,6 +2,7 @@ import React from "react";
 import "animate.css";
 import { LaptopMinimal, SquareTerminal } from "lucide-react";
 import coding from "./assets/Coding.mp4";
+import AnimatedVisualSpace from "./AnimatedVisualSpace";
 
 const FeaturesSection = () => (
 <> <section id="features" className="py-20  w-full"> <div className="container mx-auto px-4 text-center"> <h2
@@ -11,8 +12,8 @@ const FeaturesSection = () => (
 My{" "} <span className="bg-gradient-to-br from-purple-300 to-purple-600 text-transparent bg-clip-text">
 Expertise </span> </h2>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-      <div className="col-span-2">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+      <div className="col-span-1 h-full">
       {/* Web Development Card */}
       <div className="flex flex-col col-span-1 justify-between space-y-8 feature-card p-6 bg-gradient-to-br from-neutral-950 to-neutral-900 backdrop-blur-sm shadow-lg hover:shadow-xl transition hoverShadow border-4 border-neutral-300 rounded-2xl">
         <div className="flex flex-col items-center space-y-6">
@@ -110,8 +111,12 @@ Expertise </span> </h2>
             </div>
         </div>
       </div>
+      <div className="mt-7 hidden sm:block">
+  <AnimatedVisualSpace />
+</div>
+
       </div>
-      <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="col-span-1 grid grid-cols-1 md:grid-cols-1 gap-6">
 
       {/* App Development Card */}
 <div className="flex flex-col justify-between space-y-8 feature-card p-6 bg-gradient-to-br from-neutral-950 to-neutral-900 backdrop-blur-sm shadow-lg hover:shadow-xl transition hoverShadow border-4 border-neutral-300 rounded-2xl">
@@ -123,7 +128,7 @@ Expertise </span> </h2>
       App Development
     </h3>
     <p className="text-lg lg:text-xl text-neutral-400 text-center">
-      On a journey to learning App Development 🏕️
+      I love building apps from the ground up and take pride in turning ideas into smooth, functional experiences on every device.
     </p>
   </div>
 
@@ -133,7 +138,7 @@ Expertise </span> </h2>
       App Dev Stack
     </h4>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
       
       {/* Languages */}
       <div className="bg-neutral-900/50 p-4 rounded-lg border border-purple-600/30 hover:border-purple-600 transition-colors">
