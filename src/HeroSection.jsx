@@ -23,7 +23,7 @@ const HeroSection = () => (
           className="text-base sm:text-lg slideUp text-neutral-400 max-w-xl font-bold"
           id="normalText"
         >
-          I develop scalable web and mobile applications and am passionate about integrating AI and blockchain into real-world systems. My core stack includes MERN, Spring Boot, and EVM smart contracts.
+          I develop scalable web and mobile applications and am passionate about integrating AI and blockchain into real-world systems. My core stack includes MERN, Android development.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 mt-6">
