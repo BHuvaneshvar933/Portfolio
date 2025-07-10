@@ -9,6 +9,7 @@ import event from "./assets/event.webp";
 import xo from "./assets/xo.jpeg";
 import shop from "./assets/shop.png";
 import "animate.css";
+import todo from "./assets/todo.png"; 
 
 const Work = () => {
   const [showMore, setShowMore] = useState(false);
@@ -97,6 +98,14 @@ const Work = () => {
         Tech_Stack: "Kotlin, Android Studio, XML",
         image: xo, // replace with your actual app image
         link: "https://github.com/BHuvaneshvar933/tic-tac-toe-kotlin",
+        domain: "App development",
+      },{
+        title: "To-do (Android)",
+        description:
+          "A simple Android To-Do app built using Kotlin, featuring task management with RecyclerView, local database handling, and a clean Material Design interface.",
+        Tech_Stack: "Kotlin, Android Studio, XML",
+        image: todo, // replace with your actual app image
+        link: "https://github.com/BHuvaneshvar933/to-do-app",
         domain: "App development",
       },
     ],
