@@ -13,7 +13,7 @@ const HeroSection = () => (
           className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight fadeIn"
           id="heading"
         >
-          HELLO I'M C BHUVANESHVAR
+          HELLO I'M <br>C BHUVANESHVAR
           <span className="bg-gradient-to-r from-purple-300 to-purple-600 text-transparent bg-clip-text font-extrabold block mt-2">
             REDDY
           </span>
@@ -23,7 +23,7 @@ const HeroSection = () => (
           className="text-base sm:text-lg slideUp text-neutral-400 max-w-xl font-bold"
           id="normalText"
         >
-          I develop scalable web and mobile applications and am passionate about integrating AI and blockchain into real-world systems. My core stack includes MERN, Spring Boot, and EVM smart contracts.
+          I develop scalable web and mobile applications and am passionate about integrating AI and blockchain into real-world systems. My core stack includes MERN, Android development.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 mt-6">
