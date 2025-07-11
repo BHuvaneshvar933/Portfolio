@@ -13,7 +13,7 @@ const HeroSection = () => (
           className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight fadeIn"
           id="heading"
         >
-          HELLO I'M <br>C BHUVANESHVAR
+          HELLO I'M C BHUVANESHVAR
           <span className="bg-gradient-to-r from-purple-300 to-purple-600 text-transparent bg-clip-text font-extrabold block mt-2">
             REDDY
           </span>
@@ -53,12 +53,10 @@ const HeroSection = () => (
       
       {/* Right column - Image */}
       <img
-   src="https://mattfarley.ca/img/hero-devices.svg"
-   className="w-full sm:w-11/12 mx-auto mb-8 mt-20"
-   alt="Hero Devices"
- />
-      
-    </div>
+              src="https://mattfarley.ca/img/hero-devices.svg"
+                className="w-full sm:w-11/12 mx-auto mb-8 mt-20"
+                 alt="Hero Devices"/>  
+   </div>
     
     {/* Scroll indicator */}
     <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
