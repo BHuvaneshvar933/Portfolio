@@ -185,7 +185,7 @@ Expertise </span> </h2>
   
   {/* Header Section */}
   <div className="flex flex-col items-center space-y-4">
-     <SiBlockchaindotcom size={100}  />
+     <SiBlockchaindotcom size={83}  />
     <h3 className="text-2xl lg:text-3xl font-semibold bg-gradient-to-br from-purple-300 to-purple-600 text-transparent bg-clip-text text-center">
       Blockchain and AI
     </h3>
