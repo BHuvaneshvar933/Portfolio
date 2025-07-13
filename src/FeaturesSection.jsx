@@ -1,6 +1,8 @@
 import React from "react";
 import "animate.css";
 import { LaptopMinimal, SquareTerminal } from "lucide-react";
+import { FaAndroid} from 'react-icons/fa'
+import { SiBlockchaindotcom } from 'react-icons/si'
 import coding from "./assets/Coding.mp4";
 import AnimatedVisualSpace from "./AnimatedVisualSpace";
 
@@ -123,9 +125,9 @@ Expertise </span> </h2>
   
   {/* Header Section */}
   <div className="flex flex-col items-center space-y-4">
-    <LaptopMinimal className="w-16 h-16 lg:w-20 lg:h-20 text-purple-400" />
+    <FaAndroid size={100} color="white" />
     <h3 className="text-2xl lg:text-3xl font-semibold bg-gradient-to-br from-purple-300 to-purple-600 text-transparent bg-clip-text text-center">
-      App Development
+      Android Development
     </h3>
     <p className="text-lg lg:text-xl text-neutral-400 text-center">
       I love building apps from the ground up and take pride in turning ideas into smooth, functional experiences on every device.
@@ -135,7 +137,7 @@ Expertise </span> </h2>
   {/* Stack Section */}
   <div className="text-center space-y-6">
     <h4 className="text-2xl font-bold bg-gradient-to-br from-purple-300 to-purple-600 text-transparent bg-clip-text">
-      App Dev Stack
+      Android Dev Stack
     </h4>
 
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
@@ -183,7 +185,7 @@ Expertise </span> </h2>
   
   {/* Header Section */}
   <div className="flex flex-col items-center space-y-4">
-    <LaptopMinimal className="w-16 h-16 lg:w-20 lg:h-20 text-purple-400" />
+     <SiBlockchaindotcom size={100}  />
     <h3 className="text-2xl lg:text-3xl font-semibold bg-gradient-to-br from-purple-300 to-purple-600 text-transparent bg-clip-text text-center">
       Blockchain and AI
     </h3>
