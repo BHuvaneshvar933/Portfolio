@@ -10,6 +10,7 @@ import xo from "./assets/xo.jpeg";
 import shop from "./assets/shop.png";
 import "animate.css";
 import todo from "./assets/todo.png"; 
+import coffee from "./assets/coffee.png"
 
 const Work = () => {
   const [showMore, setShowMore] = useState(false);
@@ -108,6 +109,15 @@ const Work = () => {
         link: "https://github.com/BHuvaneshvar933/to-do-app",
         domain: "App development",
       },
+      {
+        title: "Coffee Shop App",
+        description:
+          "An elegant and functional food delivery Android application built using Kotlin, XML (Jetpack Layouts), and Android Jetpack components. Users can browse food items, add them to cart, apply discount codes, and proceed to checkout.",
+        Tech_Stack: "Kotlin, Android Studio, XML, Firebase (Database + Storage), local storage",
+        image: coffee, // replace with your actual app image
+        link: "https://github.com/BHuvaneshvar933/coffee_shop_app_kotlin",
+        domain: "App development",
+      }
     ],
     []
   );
