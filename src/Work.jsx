@@ -56,11 +56,11 @@ const Work = () => {
       {
         title: "E-commerce Website",
         description:
-          "A modern e-commerce store platform with product catalog, details, and cart functionality using React and MongoDB.(Products are not present due to limits reached in firebase)",
+          "A modern e-commerce store platform with product catalog, details, and cart functionality using React and MongoDB.",
         Tech_Stack: "React.js, Tailwind CSS, MongoDB",
-        image: shop,
-        demo: "https://e-commerce-five-dun-43.vercel.app",
-        link: "https://github.com/BHuvaneshvar933/E-commerce",
+        image: gym,
+        demo: "https://gymstore2.vercel.app/products",
+        link: "https://github.com/BHuvaneshvar933/gymstore3",
         domain: "Web development",
       },
       {
