@@ -59,7 +59,7 @@ const Work = () => {
           "A modern e-commerce store platform with product catalog, details, and cart functionality using React and MongoDB.",
         Tech_Stack: "React.js, Tailwind CSS, MongoDB",
         image: gym,
-        demo: "https://gymstore2.vercel.app/products",
+        demo: "https://gymstore2.vercel.app",
         link: "https://github.com/BHuvaneshvar933/gymstore3",
         domain: "Web development",
       },
