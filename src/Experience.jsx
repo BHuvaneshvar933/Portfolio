@@ -4,19 +4,6 @@ import { Calendar, Briefcase, Rocket, Code2, CheckCircle2 } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Full Stack Developer",
-      date: "2024 - Present",
-      description: "Delivered 5+ production-grade web applications including e-commerce platforms and creative portfolios. Focused on full-stack optimization and responsive user interfaces.",
-      icon: <Briefcase size={20} />,
-      color: "purple",
-      projects: [
-        "Gym E-commerce with secure payments",
-        "Photography Portfolio with CMS",
-        "Animated Brand landing pages"
-      ],
-      skills: ["React", "Tailwind", "Node.js", "MongoDB", "Framer Motion"]
-    },
-    {
       title: "Ad Astra Member",
       date: "2024 - Present",
       description: "Collaborating with a high-performance team to build innovative software solutions. Participating in agile sprints and technical architectural planning.",
