@@ -33,7 +33,7 @@ const AboutMe = () => {
 
           <div className="space-y-6 text-lg sm:text-xl text-neutral-400 leading-relaxed font-medium">
             <p>
-              Hey! I&apos;m <span className="text-white font-bold">C Bhuvaneshvar Reddy</span>, a driven developer currently pursuing my B.E. in Computer Science. I architect responsive, full-stack experiences using the <span className="text-purple-400">MERN stack</span>, with a proven track record of delivering production-ready freelance projects.
+              Hey! I&apos;m <span className="text-white font-bold">C Bhuvaneshvar Reddy</span>, a driven developer currently pursuing my B.E. in Computer Science. I architect responsive, full-stack experiences using the <span className="text-purple-400">MERN stack</span>, with a proven track record of delivering production-ready industry projects.
             </p>
 
             <p>

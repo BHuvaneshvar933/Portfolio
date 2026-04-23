@@ -33,7 +33,7 @@ const stats = [
   },
   {
     icon: <Briefcase className="w-6 h-6 text-purple-400" />,
-    label: "Freelance Client Work",
+    label: "Client Collaborations",
     value: "5+",
   },
   {

@@ -4,7 +4,7 @@ import { Calendar, Briefcase, Rocket, Code2, CheckCircle2 } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Freelance Web Developer",
+      title: "Full Stack Developer",
       date: "2024 - Present",
       description: "Delivered 5+ production-grade web applications including e-commerce platforms and creative portfolios. Focused on full-stack optimization and responsive user interfaces.",
       icon: <Briefcase size={20} />,
@@ -43,7 +43,7 @@ const Experience = () => {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-4 uppercase tracking-tight" id="heading">
             Work <span className="text-purple-500">History</span>
           </h2>
-          <p className="text-neutral-500 font-medium max-w-lg mx-auto">My professional journey through freelance projects and team collaborations.</p>
+          <p className="text-neutral-500 font-medium max-w-lg mx-auto">My professional journey through impactful projects and team collaborations.</p>
         </motion.div>
 
         <div className="relative max-w-5xl mx-auto px-4 sm:px-0">
