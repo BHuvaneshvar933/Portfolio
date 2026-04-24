@@ -6,7 +6,7 @@ import chat from "./assets/chat.webp";
 import recipesauce from "./assets/recipesauce.webp";
 import home from "./assets/home_page.webp";
 import air from "./assets/book.png";
-import event from "./assets/event.webp";
+import event from "./assets/event.png";
 import xo from "./assets/xo.jpeg";
 import todo from "./assets/todo.png";
 import coffee from "./assets/coffee.png";
@@ -50,7 +50,7 @@ const projects = [
     description: "Modern store platform with advanced cart logic and product catalog.",
     Tech_Stack: ["React", "Node.js", "MongoDB"],
     image: gym,
-    demo: "https://gymstore2.vercel.app",
+    demo: "https://gymstore3.vercel.app/",
     link: "https://github.com/BHuvaneshvar933/gymstore3",
     domain: "Web development",
   },
