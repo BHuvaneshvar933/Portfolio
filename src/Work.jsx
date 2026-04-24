@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink, Github, Plus, Minus } from "lucide-react";
 import vreality from "./assets/vreality.webp";
 import chat from "./assets/chat.webp";
-import gym from "./assets/Products1_page.webp";
 import recipesauce from "./assets/recipesauce.webp";
 import home from "./assets/home_page.webp";
 import air from "./assets/book.png";
@@ -12,6 +11,7 @@ import xo from "./assets/xo.jpeg";
 import todo from "./assets/todo.png";
 import coffee from "./assets/coffee.png";
 import capsule from "./assets/capsule.png";
+import gym from "./assets/gym.png";
 
 const projects = [
   {
@@ -42,16 +42,6 @@ const projects = [
     image: recipesauce,
     demo: "https://recipe-sauce.vercel.app",
     link: "https://github.com/BHuvaneshvar933/RecipeSauce",
-    domain: "Web development",
-  },
-  {
-    slug: "airbnb-clone",
-    title: "Airbnb Clone",
-    description: "Full-stack feed and booking system with secure user authentication.",
-    Tech_Stack: ["React", "Express", "MongoDB"],
-    image: air,
-    demo: "https://abproject-sclone.vercel.app/",
-    link: "https://github.com/BHuvaneshvar933/AirBnb_clone",
     domain: "Web development",
   },
   {
@@ -132,8 +122,8 @@ const Work = () => {
                 key={category}
                 onClick={() => setActiveCategory(category)}
                 className={`px-5 py-2 rounded-full text-[10px] font-black uppercase tracking-widest transition-all ${activeCategory === category
-                    ? "bg-purple-600 text-white shadow-[0_0_15px_rgba(168,85,247,0.4)]"
-                    : "bg-white/5 text-neutral-500 hover:bg-white/10 hover:text-neutral-300"
+                  ? "bg-purple-600 text-white shadow-[0_0_15px_rgba(168,85,247,0.4)]"
+                  : "bg-white/5 text-neutral-500 hover:bg-white/10 hover:text-neutral-300"
                   }`}
               >
                 {category.split(" ")[0]}
