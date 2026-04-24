@@ -23,11 +23,24 @@ const App = () => {
         Skip to main content
       </a>
       <ParticleBackground />
+      <div className="noise-overlay"></div>
       <Navbar />
       <Sidebar />
       <main id="main-content" className="page-container relative z-10 text-white">
         <Routes>
-          <Route path="/" element={<><HeroSection/><AboutMe/><DeveloperStats/><FeaturesSection/><Work/><Experience/></>}/>
+          <Route path="/" element={<>
+            <HeroSection />
+            <div className="circuit-divider" />
+            <AboutMe />
+            <div className="circuit-divider" />
+            <DeveloperStats />
+            <div className="circuit-divider" />
+            <FeaturesSection />
+            <div className="circuit-divider" />
+            <Work />
+            <div className="circuit-divider" />
+            <Experience />
+          </>} />
           <Route path="/contact" element={<UserForm/>}/>
           <Route path="/user-form" element={<Navigate to="/contact" replace />} />
           <Route path="*" element={<Navigate to="/" replace />} />

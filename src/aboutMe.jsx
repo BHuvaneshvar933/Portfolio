@@ -28,7 +28,7 @@ const AboutMe = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
         >
           <h2 className="text-4xl sm:text-5xl font-black mb-10 tracking-tight" id="heading">
-            ABOUT <span className="text-purple-500">ME</span>
+            ABOUT <span className="text-purple-500 glitch" data-text="ME">ME</span>
           </h2>
 
           <div className="space-y-6 text-lg sm:text-xl text-neutral-400 leading-relaxed font-medium">

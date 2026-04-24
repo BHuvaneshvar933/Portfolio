@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState, useRef } from "react";
+import { motion, AnimatePresence, useMotionValue, useTransform, useSpring } from "framer-motion";
 import { ExternalLink, Github, Plus, Minus } from "lucide-react";
 import vreality from "./assets/vreality.webp";
 import chat from "./assets/chat.webp";
@@ -94,6 +94,107 @@ const projects = [
   }
 ];
 
+const ProjectCard = ({ project }) => {
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+
+  const mouseXSpring = useSpring(x);
+  const mouseYSpring = useSpring(y);
+
+  const rotateX = useTransform(mouseYSpring, [-0.5, 0.5], ["10deg", "-10deg"]);
+  const rotateY = useTransform(mouseXSpring, [-0.5, 0.5], ["-10deg", "10deg"]);
+
+  const handleMouseMove = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const width = rect.width;
+    const height = rect.height;
+    const mouseX = e.clientX - rect.left;
+    const mouseY = e.clientY - rect.top;
+
+    const xPct = mouseX / width - 0.5;
+    const yPct = mouseY / height - 0.5;
+
+    x.set(xPct);
+    y.set(yPct);
+  };
+
+  const handleMouseLeave = () => {
+    x.set(0);
+    y.set(0);
+  };
+
+  return (
+    <motion.div
+      layout
+      initial={{ opacity: 0, scale: 0.9 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.9 }}
+      style={{
+        rotateX,
+        rotateY,
+        transformStyle: "preserve-3d",
+      }}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+      className="group glow-border overflow-hidden glass-card relative cursor-pointer"
+    >
+      <div style={{ transform: "translateZ(50px)" }} className="relative z-10">
+        {/* Cyber Scanning Line */}
+        <div className="absolute inset-0 z-20 pointer-events-none overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+          <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-purple-500 to-transparent animate-[scan_3s_linear_infinite]"></div>
+        </div>
+
+        <div className="relative aspect-video overflow-hidden bg-neutral-900">
+          {/* Digital Glitch Overlay */}
+          <div className="image-glitch-overlay" />
+          
+          <img
+            src={project.image}
+            alt={project.title}
+            className="object-cover w-full h-full transform transition-transform duration-700 group-hover:scale-110 group-hover:rotate-1"
+          />
+          <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4 z-30">
+            {project.demo && (
+              <a href={project.demo} target="_blank" rel="noreferrer" className="p-3 bg-purple-600 rounded-full hover:scale-110 transition-transform">
+                <ExternalLink size={20} className="text-white" />
+              </a>
+            )}
+            <a href={project.link} target="_blank" rel="noreferrer" className="p-3 bg-white/20 backdrop-blur-md rounded-full hover:scale-110 transition-transform">
+              <Github size={20} className="text-white" />
+            </a>
+          </div>
+        </div>
+
+        <div className="p-6 relative z-10">
+          <div className="flex justify-between items-start mb-3">
+            <h3 className="text-xl font-bold text-white tracking-tight group-hover:text-purple-400 transition-colors">{project.title}</h3>
+            <span className="text-[10px] font-black uppercase tracking-widest text-purple-500 bg-purple-500/10 px-2 py-1 rounded">
+              {project.domain === "Web development" ? "Web" : "App"}
+            </span>
+          </div>
+          <p className="text-neutral-400 text-sm mb-6 line-clamp-2 leading-relaxed">
+            {project.description}
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {project.Tech_Stack.map(tech => (
+              <motion.span 
+                key={tech} 
+                className="text-[9px] font-bold text-neutral-500 uppercase tracking-tighter"
+                whileHover={{ color: "#a855f7", scale: 1.1 }}
+              >
+                # {tech}
+              </motion.span>
+            ))}
+          </div>
+        </div>
+      </div>
+      
+      {/* Holographic Shine Effect */}
+      <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+    </motion.div>
+  );
+};
+
 const Work = () => {
   const [showMore, setShowMore] = useState(false);
   const [activeCategory, setActiveCategory] = useState("All");
@@ -114,72 +215,30 @@ const Work = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-4 uppercase tracking-tighter" id="heading">
-            FEATURED <span className="text-purple-500">PROJECTS</span>
+            FEATURED <span className="text-purple-500 glitch" data-text="PROJECTS">PROJECTS</span>
           </h2>
           <div className="flex justify-center gap-2 mb-10">
             {["All", "Web development", "App development"].map((category) => (
-              <button
+              <motion.button
                 key={category}
                 onClick={() => setActiveCategory(category)}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
                 className={`px-5 py-2 rounded-full text-[10px] font-black uppercase tracking-widest transition-all ${activeCategory === category
-                  ? "bg-purple-600 text-white shadow-[0_0_15px_rgba(168,85,247,0.4)]"
+                  ? "bg-purple-600 text-white shadow-[0_0_15px_rgba(168,85,247,0.4)] neon-pulse"
                   : "bg-white/5 text-neutral-500 hover:bg-white/10 hover:text-neutral-300"
                   }`}
               >
                 {category.split(" ")[0]}
-              </button>
+              </motion.button>
             ))}
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8" style={{ perspective: "1000px" }}>
           <AnimatePresence mode="popLayout">
             {visibleProjects.map((project) => (
-              <motion.div
-                key={project.slug}
-                layout
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                className="group glow-border overflow-hidden glass-card"
-              >
-                <div className="relative aspect-video overflow-hidden bg-neutral-900">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="object-cover w-full h-full transform transition-transform duration-700 group-hover:scale-110 group-hover:rotate-1"
-                  />
-                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-                    {project.demo && (
-                      <a href={project.demo} target="_blank" rel="noreferrer" className="p-3 bg-purple-600 rounded-full hover:scale-110 transition-transform">
-                        <ExternalLink size={20} className="text-white" />
-                      </a>
-                    )}
-                    <a href={project.link} target="_blank" rel="noreferrer" className="p-3 bg-white/20 backdrop-blur-md rounded-full hover:scale-110 transition-transform">
-                      <Github size={20} className="text-white" />
-                    </a>
-                  </div>
-                </div>
-
-                <div className="p-6">
-                  <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-xl font-bold text-white tracking-tight">{project.title}</h3>
-                    <span className="text-[10px] font-black uppercase tracking-widest text-purple-500 bg-purple-500/10 px-2 py-1 rounded">
-                      {project.domain === "Web development" ? "Web" : "App"}
-                    </span>
-                  </div>
-                  <p className="text-neutral-400 text-sm mb-6 line-clamp-2 leading-relaxed">
-                    {project.description}
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    {project.Tech_Stack.map(tech => (
-                      <span key={tech} className="text-[9px] font-bold text-neutral-500 uppercase tracking-tighter">
-                        # {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </motion.div>
+              <ProjectCard key={project.slug} project={project} />
             ))}
           </AnimatePresence>
         </div>

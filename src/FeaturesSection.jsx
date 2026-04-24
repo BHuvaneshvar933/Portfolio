@@ -16,7 +16,7 @@ const FeaturesSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-4" id="heading">
-            MY <span className="text-purple-500">EXPERTISE</span>
+            MY <span className="text-purple-500 glitch" data-text="EXPERTISE">EXPERTISE</span>
           </h2>
           <div className="w-24 h-1 bg-purple-500 mx-auto rounded-full"></div>
         </motion.div>
