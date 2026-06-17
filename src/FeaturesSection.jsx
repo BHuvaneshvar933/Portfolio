@@ -87,26 +87,31 @@ const FeaturesSection = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="glow-border p-10 glass-card overflow-hidden group flex-[1.5] flex flex-col justify-center"
+              className="glow-border glass-card overflow-hidden group flex-[1.5] flex flex-col relative min-h-[350px] p-10"
             >
-              <div className="flex items-center gap-8 mb-8">
-                <div className="p-5 bg-blue-500/10 rounded-2xl border border-blue-500/20 shrink-0">
-                  <SiBlockchaindotcom size={48} className="text-blue-400" />
-                </div>
-                <div>
-                  <h3 className="text-3xl font-bold text-white mb-2">Blockchain & AI</h3>
-                  <p className="text-neutral-400 leading-relaxed">Exploring the frontier of decentralized systems and intelligence.</p>
-                </div>
-              </div>
-              
-              <div className="relative rounded-2xl overflow-hidden h-64 mb-8">
-                <video className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-105" autoPlay loop muted playsInline>
+              {/* Background Video */}
+              <div className="absolute inset-0 z-0">
+                <video className="w-full h-full object-cover grayscale opacity-30 group-hover:grayscale-0 group-hover:opacity-60 transition-all duration-1000 group-hover:scale-105" autoPlay loop muted playsInline>
                   <source src={coding} type="video/mp4" />
                 </video>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-                <div className="absolute bottom-6 left-6 flex items-center gap-3">
-                  <Globe className="text-blue-400 animate-spin-slow" size={20}/>
-                  <span className="text-xs font-black text-white uppercase tracking-[0.3em]">Active Research Lab</span>
+                <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a]/90 via-[#0a0a0a]/60 to-[#0a0a0a]/90 group-hover:from-blue-900/40 group-hover:via-black/40 group-hover:to-purple-900/40 transition-all duration-1000"></div>
+              </div>
+
+              {/* Content */}
+              <div className="relative z-10 flex flex-col h-full justify-between">
+                <div className="flex items-center gap-8 mb-8">
+                  <div className="p-5 bg-blue-500/20 backdrop-blur-md rounded-2xl border border-blue-500/30 shrink-0 shadow-lg">
+                    <SiBlockchaindotcom size={48} className="text-blue-400" />
+                  </div>
+                  <div>
+                    <h3 className="text-3xl font-bold text-white mb-2 drop-shadow-lg">Blockchain & AI</h3>
+                    <p className="text-neutral-300 leading-relaxed font-medium drop-shadow-lg">Exploring the frontier of decentralized systems and intelligence.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center gap-3 mt-auto">
+                  <Globe className="text-blue-400 animate-spin-slow drop-shadow-lg" size={20}/>
+                  <span className="text-xs font-black text-white uppercase tracking-[0.3em] drop-shadow-lg">Active Research Lab</span>
                 </div>
               </div>
             </motion.div>

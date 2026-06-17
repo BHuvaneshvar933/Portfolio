@@ -24,7 +24,7 @@ const stats = [
   {
     icon: <Settings className="w-6 h-6 text-purple-400" />,
     label: "Stack Mastered",
-    value: "25+",
+    value: "10+",
   },
   {
     icon: <Code className="w-6 h-6 text-purple-400" />,

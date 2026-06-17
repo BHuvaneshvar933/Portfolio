@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { Link } from 'react-router-dom';
+import resumePDF from './assets/C_Bhuvaneshvar_Reddy.pdf';
 
 const Typewriter = ({ text, delay = 0 }) => {
   const [displayText, setDisplayText] = useState("");
@@ -32,7 +33,7 @@ const Typewriter = ({ text, delay = 0 }) => {
   );
 };
 
-const MagneticButton = ({ children, className, href, download, target, rel }) => {
+const MagneticButton = ({ children, className, href, download, target, rel, ...props }) => {
   const ref = useRef(null);
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -69,6 +70,7 @@ const MagneticButton = ({ children, className, href, download, target, rel }) =>
       onMouseLeave={handleMouseLeave}
       style={{ x: springX, y: springY }}
       className={className}
+      {...props}
     >
       {children}
     </motion.a>
@@ -76,6 +78,31 @@ const MagneticButton = ({ children, className, href, download, target, rel }) =>
 };
 
 const HeroSection = () => {
+  const handleDownload = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch(resumePDF);
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'C_Bhuvaneshvar_Reddy.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error('Error downloading the resume:', error);
+      // Fallback if fetch fails
+      const link = document.createElement('a');
+      link.href = resumePDF;
+      link.download = 'C_Bhuvaneshvar_Reddy.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  };
+
   return (
     <section
       id="home"
@@ -125,10 +152,9 @@ const HeroSection = () => {
             className="flex flex-wrap gap-5 mt-4"
           >
             <MagneticButton
-              href="/resume.pdf"
-              download="Bhuvaneshvar_Reddy_Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              href={resumePDF}
+              download="C_Bhuvaneshvar_Reddy.pdf"
+              onClick={handleDownload}
               className="group relative px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-full text-lg font-bold transition-all hover:shadow-[0_0_25px_rgba(168,85,247,0.6)] flex items-center gap-2 neon-pulse"
             >
               DOWNLOAD RESUME

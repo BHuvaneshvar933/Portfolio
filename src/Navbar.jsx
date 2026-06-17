@@ -11,7 +11,7 @@ const Navbar = () => {
       id="navbar"
     >
       <div className="container mx-auto flex items-center justify-between py-4 px-6 md:px-10">
-      
+
         <div className="text-white text-lg md:text-2xl font-semibold" id="heading">
           {isHome ? (
             <a href="#home">C Bhuvaneshvar Reddy</a>
@@ -25,37 +25,37 @@ const Navbar = () => {
             to={isHome ? "#home" : "/#home"}
             className="text-white hover:text-neutral-400 text-sm md:text-lg transition"
           >
-            <span className="text-xs">01</span> {"//"}Home
+            <span className="text-xs"></span> {"//"}Home
           </Link>
           <Link
             to={isHome ? "#about" : "/#about"}
             className="text-white hover:text-neutral-400 text-sm md:text-lg transition"
           >
-            <span className="text-xs">02</span> {"//"} About
+            <span className="text-xs"></span> {"//"} About
           </Link>
           <Link
             to={isHome ? "#features" : "/#features"}
             className="text-white hover:text-neutral-400 text-sm md:text-lg transition"
           >
-            <span className="text-xs">03</span> {"//"}Expertise
+            <span className="text-xs"></span> {"//"}Expertise
           </Link>
           <Link
             to={isHome ? "#work" : "/#work"}
             className="text-white hover:text-neutral-400 text-sm md:text-lg transition"
           >
-            <span className="text-xs">04</span> {"//"}Work
+            <span className="text-xs"></span> {"//"}Work
           </Link>
           <Link
             to={isHome ? "#experience" : "/#experience"}
             className="text-white hover:text-neutral-400 text-sm md:text-lg transition"
           >
-            <span className="text-xs">05</span> {"//"}Experience
+            <span className="text-xs"></span> {"//"}Experience
           </Link>
           <Link
             to={isHome ? "#contact" : "/#contact"}
             className="text-white hover:text-neutral-400 text-sm md:text-lg transition"
           >
-            <span className="text-xs">06</span> {"//"}Contact
+            <span className="text-xs"></span> {"//"}Contact
           </Link>
         </div>
         <div className="md:hidden">
@@ -64,9 +64,8 @@ const Navbar = () => {
             className="text-white focus:outline-none"
           >
             <i
-              className={`fas ${
-                isMenuOpen ? "fa-times" : "fa-bars"
-              } text-2xl`}
+              className={`fas ${isMenuOpen ? "fa-times" : "fa-bars"
+                } text-2xl`}
             />
           </button>
         </div>
