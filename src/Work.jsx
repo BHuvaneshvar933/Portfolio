@@ -12,6 +12,8 @@ import todo from "./assets/todo.png";
 import coffee from "./assets/coffee.png";
 import capsule from "./assets/capsule.png";
 import gym from "./assets/gym.png";
+import nexus from "./assets/nexus.png";
+import projectforge from "./assets/projectforge.png";
 
 const projects = [
   {
@@ -20,8 +22,26 @@ const projects = [
     description: "Track EVERYTHING about your productivity and professional life in ONE place",
     Tech_Stack: ["Tailwind", "PWA", "MERN"],
     image: capsule,
-    demo: "https://interview-tracker-smoky.vercel.app/",
+    demo: "https://capsulehq.tech/",
     link: "https://github.com/BHuvaneshvar933/Capsule",
+    domain: "Web development",
+  },
+  {
+    slug: "nexusflow",
+    title: "NexusFlow",
+    description: "Self-hosted, scalable workflow automation engine and integration platform with a visual builder.",
+    Tech_Stack: ["React", "Node.js", "Prisma"],
+    image: nexus,
+    link: "https://github.com/BHuvaneshvar933/NexusFlow",
+    domain: "Web development",
+  },
+  {
+    slug: "projectforge",
+    title: "ProjectForge",
+    description: "A comprehensive platform for building teams, managing projects, and seamless collaboration.",
+    Tech_Stack: ["React", "Node.js", "Socket.io"],
+    image: projectforge,
+    link: "https://github.com/BHuvaneshvar933/ProjectForge",
     domain: "Web development",
   },
   {
@@ -147,7 +167,7 @@ const ProjectCard = ({ project }) => {
         <div className="relative aspect-video overflow-hidden bg-neutral-900">
           {/* Digital Glitch Overlay */}
           <div className="image-glitch-overlay" />
-          
+
           <img
             src={project.image}
             alt={project.title}
@@ -177,8 +197,8 @@ const ProjectCard = ({ project }) => {
           </p>
           <div className="flex flex-wrap gap-2">
             {project.Tech_Stack.map(tech => (
-              <motion.span 
-                key={tech} 
+              <motion.span
+                key={tech}
                 className="text-[9px] font-bold text-neutral-500 uppercase tracking-tighter"
                 whileHover={{ color: "#a855f7", scale: 1.1 }}
               >
@@ -188,7 +208,7 @@ const ProjectCard = ({ project }) => {
           </div>
         </div>
       </div>
-      
+
       {/* Holographic Shine Effect */}
       <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
     </motion.div>

@@ -33,20 +33,20 @@ const AboutMe = () => {
 
           <div className="space-y-6 text-lg sm:text-xl text-neutral-400 leading-relaxed font-medium">
             <p>
-              Hey! I&apos;m <span className="text-white font-bold">C Bhuvaneshvar Reddy</span>, a driven developer currently pursuing my B.E. in Computer Science. I architect responsive, full-stack experiences using the <span className="text-purple-400">MERN stack</span>, with a proven track record of delivering production-ready industry projects.
+              Hey! I&apos;m <span className="text-white font-bold">C Bhuvaneshvar Reddy</span>, a final year Computer Science student (GPA 9.04) and <span className="text-purple-400">Backend Engineer</span> based in Bangalore. I write systems that scale—not just demos that look good.
             </p>
 
             <p>
-              My journey bridges the gap between web development and <span className="text-purple-400">Android engineering</span>. I&apos;ve collaborated with diverse clients to turn concepts into reality, mastering the art of solving complex problems under real-world constraints.
+              My expertise lies in architecting production-grade backend systems with practical AI integration. I&apos;m backend-heavy but full-stack capable, spanning <span className="text-purple-400">Node.js, Spring Boot, TypeScript, and Python</span>. I thrive on solving complex engineering challenges—from orchestrating real-time data pipelines and asynchronous workflows to building out secure, multi-tenant architectures. I focus on shipping resilient, real-world products.
             </p>
 
             <p>
-              Currently, I&apos;m pushing boundaries with <span className="text-purple-400">WebSockets</span>, <span className="text-purple-400">Blockchain/Smart Contracts</span>, and <span className="text-purple-400">AI integration</span> to build the next generation of intelligent, decentralized applications.
+              Currently, my primary focus is diving deep into <span className="text-purple-400">System Design</span>, solving complex <span className="text-purple-400">DSA</span> problems, and exploring advanced AI patterns like <span className="text-purple-400">Vector Databases</span> and <span className="text-purple-400">RAG architectures</span>.
             </p>
           </div>
           
           <div className="mt-12 flex flex-wrap justify-center gap-4">
-             {["Full Stack", "Native Android", "Web3 Explorer", "AI Enthusiast"].map(tag => (
+             {["Backend Engineer", "System Architecture", "RAG & Vector DBs", "Scalable Systems"].map(tag => (
                <span key={tag} className="px-4 py-2 bg-white/5 rounded-full border border-white/10 text-xs font-bold text-purple-400 uppercase tracking-widest">{tag}</span>
              ))}
           </div>

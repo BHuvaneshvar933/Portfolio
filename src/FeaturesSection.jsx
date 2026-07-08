@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { SquareTerminal, Zap, Code2, Database, Layout, Globe } from "lucide-react";
+import { SquareTerminal, Zap, Code2, Database, Layout, Globe, BrainCircuit, Server, Terminal } from "lucide-react";
 import { FaAndroid } from 'react-icons/fa';
 import { SiBlockchaindotcom } from 'react-icons/si';
 import coding from "./assets/Coding.mp4";
@@ -7,9 +7,9 @@ import coding from "./assets/Coding.mp4";
 const FeaturesSection = () => {
 
   return (
-    <section id="expertise" className="py-24 w-full relative overflow-hidden">
+    <section id="skills" className="py-24 w-full relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -21,45 +21,48 @@ const FeaturesSection = () => {
           <div className="w-24 h-1 bg-purple-500 mx-auto rounded-full"></div>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          {/* Web Development Card */}
+        <div className="flex flex-col gap-10">
+          {/* Top Row: Backend Developer & Tech Stack */}
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="glow-border p-10 glass-card flex flex-col h-full justify-between"
+            className="glow-border p-10 glass-card w-full"
           >
-            <div className="flex flex-col items-center text-center space-y-8">
-              <div className="p-5 bg-purple-500/10 rounded-2xl border border-purple-500/20">
-                <SquareTerminal className="w-16 h-16 text-purple-400" />
-              </div>
-              <h3 className="text-3xl md:text-4xl font-bold text-white tracking-tight">Web Developer</h3>
-              <p className="text-neutral-400 text-lg leading-relaxed max-w-md">
-                Crafting pixel-perfect, scalable web experiences with a focus on performance and user-centric design.
-              </p>
-            </div>
-
-            <div className="space-y-10 mt-12">
-              <div>
-                <h4 className="text-xs uppercase tracking-[0.3em] text-purple-400 font-bold text-center mb-6">Mastered Tech Stack</h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <StackItem icon={<Code2 size={18}/>} title="Frontend" items={["React.js", "Next.js", "Tailwind", "TS"]} />
-                  <StackItem icon={<Layout size={18}/>} title="Backend" items={["Node.js", "Express", "REST", "WS"]} />
-                  <StackItem icon={<Database size={18}/>} title="Data" items={["MongoDB", "Firebase", "SQL"]} />
-                  <StackItem icon={<Zap size={18}/>} title="Tools" items={["Git", "Docker", "Vite"]} />
+            <div className="flex flex-col lg:flex-row gap-12">
+              {/* Left Side: Role and Info */}
+              <div className="flex flex-col items-center text-center lg:text-left lg:items-start space-y-8 lg:w-1/3 shrink-0">
+                <div className="p-5 bg-purple-500/10 rounded-2xl border border-purple-500/20 inline-flex">
+                  <SquareTerminal className="w-16 h-16 text-purple-400" />
+                </div>
+                <h3 className="text-3xl md:text-4xl font-bold text-white tracking-tight">Backend Developer</h3>
+                <p className="text-neutral-400 text-lg leading-relaxed">
+                  Building scalable architectures, real-time systems, and practical AI integrations with a focus on reliability.
+                </p>
+                <div className="w-full pt-4 space-y-6">
+                  <SkillBar label="Backend Engineering" percentage="95%" />
+                  <SkillBar label="System Architecture" percentage="90%" />
                 </div>
               </div>
 
-              <div className="pt-8 border-t border-white/5 space-y-6">
-                <SkillBar label="Frontend Architecture" percentage="95%" />
-                <SkillBar label="Backend Systems" percentage="85%" />
+              {/* Right Side: Mastered Tech Stack */}
+              <div className="lg:w-2/3 w-full flex flex-col justify-center">
+                <h4 className="text-xs uppercase tracking-[0.3em] text-purple-400 font-bold mb-6 text-center lg:text-left">Mastered Tech Stack</h4>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                  <StackItem icon={<Terminal size={18} />} title="Languages" items={["JavaScript", "TypeScript", "Java", "Python", "Kotlin", "SQL", "HTML"]} />
+                  <StackItem icon={<Server size={18} />} title="Backend" items={["Node.js", "Express.js", "Spring Boot", "Socket.io", "REST APIs", "JWT"]} />
+                  <StackItem icon={<Layout size={18} />} title="Frontend" items={["React", "Next.js", "Tailwind CSS", "PWA", "Service Workers", "GSAP", "Framer Motion"]} />
+                  <StackItem icon={<Database size={18} />} title="Databases" items={["MongoDB", "PostgreSQL", "MySQL", "SQLite", "Redis", "Prisma", "Firebase"]} />
+                  <StackItem icon={<Zap size={18} />} title="DevOps & Tools" items={["Git", "GitHub", "Docker", "Linux", "Vercel", "Railway", "Vite", "Postman"]} />
+                  <StackItem icon={<FaAndroid size={18} />} title="Mobile" items={["Android SDK", "Jetpack", "XML"]} />
+                </div>
               </div>
             </div>
           </motion.div>
 
-          {/* Right Column: Android & Emerging Tech */}
-          <div className="flex flex-col gap-8 h-full">
-            {/* Android Development Card */}
+          {/* Bottom Row: AI & Emerging Tech */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            {/* AI & Machine Learning Card */}
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -68,26 +71,26 @@ const FeaturesSection = () => {
             >
               <div className="flex items-center gap-8 mb-8">
                 <div className="p-5 bg-green-500/10 rounded-2xl border border-green-500/20 shrink-0">
-                  <FaAndroid size={54} className="text-green-400" />
+                  <BrainCircuit size={54} className="text-green-400" />
                 </div>
                 <div>
-                  <h3 className="text-3xl font-bold text-white mb-3">Android Dev</h3>
-                  <p className="text-neutral-400 leading-relaxed">Native app development with a focus on smooth UX and robust architecture.</p>
+                  <h3 className="text-3xl font-bold text-white mb-3">AI Integration</h3>
+                  <p className="text-neutral-400 leading-relaxed">Implementing practical AI capabilities using modern LLMs for intelligent applications.</p>
                 </div>
               </div>
-              <div className="flex flex-wrap gap-3 justify-start">
-                {["Kotlin", "Java", "Android SDK", "Jetpack", "Firebase", "SQLite"].map(skill => (
-                  <span key={skill} className="px-4 py-2 bg-white/5 rounded-full text-xs font-bold text-neutral-300 border border-white/10 uppercase tracking-widest">{skill}</span>
+              <div className="flex flex-wrap gap-2 justify-start">
+                {["OpenAI", "Google Gemini", "Prompt Engineering", "Machine Learning", "LLM APIs", "Python"].map(skill => (
+                  <span key={skill} className="px-3 py-1.5 bg-white/5 rounded-full text-xs font-bold text-neutral-300 border border-white/10 uppercase tracking-widest">{skill}</span>
                 ))}
               </div>
             </motion.div>
 
-            {/* Emerging Tech Card */}
+            {/* Exploring Next Card */}
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="glow-border glass-card overflow-hidden group flex-[1.5] flex flex-col relative min-h-[350px] p-10"
+              className="glow-border glass-card overflow-hidden group flex flex-col relative min-h-[350px] p-10"
             >
               {/* Background Video */}
               <div className="absolute inset-0 z-0">
@@ -101,17 +104,17 @@ const FeaturesSection = () => {
               <div className="relative z-10 flex flex-col h-full justify-between">
                 <div className="flex items-center gap-8 mb-8">
                   <div className="p-5 bg-blue-500/20 backdrop-blur-md rounded-2xl border border-blue-500/30 shrink-0 shadow-lg">
-                    <SiBlockchaindotcom size={48} className="text-blue-400" />
+                    <Server size={48} className="text-blue-400" />
                   </div>
                   <div>
-                    <h3 className="text-3xl font-bold text-white mb-2 drop-shadow-lg">Blockchain & AI</h3>
-                    <p className="text-neutral-300 leading-relaxed font-medium drop-shadow-lg">Exploring the frontier of decentralized systems and intelligence.</p>
+                    <h3 className="text-3xl font-bold text-white mb-2 drop-shadow-lg">Exploring Next</h3>
+                    <p className="text-neutral-300 leading-relaxed font-medium drop-shadow-lg">Diving deeper into advanced system design, Web3 architectures, and cutting-edge AI.</p>
                   </div>
                 </div>
                 
                 <div className="flex items-center gap-3 mt-auto">
-                  <Globe className="text-blue-400 animate-spin-slow drop-shadow-lg" size={20}/>
-                  <span className="text-xs font-black text-white uppercase tracking-[0.3em] drop-shadow-lg">Active Research Lab</span>
+                  <Globe className="text-blue-400 animate-spin-slow drop-shadow-lg" size={20} />
+                  <span className="text-xs font-black text-white uppercase tracking-[0.3em] drop-shadow-lg">Continuous Learning</span>
                 </div>
               </div>
             </motion.div>
@@ -123,14 +126,16 @@ const FeaturesSection = () => {
 };
 
 const StackItem = ({ icon, title, items }) => (
-  <div className="p-4 bg-white/5 rounded-xl border border-white/5 hover:border-purple-500/30 transition-all group">
+  <div className="p-4 bg-white/5 rounded-xl border border-white/5 hover:border-purple-500/30 transition-all group flex flex-col h-full">
     <div className="flex items-center gap-2 mb-3">
       <span className="text-purple-400 group-hover:scale-110 transition-transform">{icon}</span>
       <span className="text-xs font-bold text-white uppercase tracking-wider">{title}</span>
     </div>
-    <div className="flex flex-wrap gap-1">
+    <div className="flex flex-wrap gap-1.5 mt-2">
       {items.map(item => (
-        <span key={item} className="text-[10px] text-neutral-500 font-medium">/ {item}</span>
+        <span key={item} className="text-xs text-neutral-300 font-bold bg-purple-500/10 border border-purple-500/20 px-2.5 py-0.5 rounded">
+          {item}
+        </span>
       ))}
     </div>
   </div>
@@ -143,7 +148,7 @@ const SkillBar = ({ label, percentage }) => (
       <span>{percentage}</span>
     </div>
     <div className="w-full h-1 bg-white/5 rounded-full overflow-hidden">
-      <motion.div 
+      <motion.div
         initial={{ width: 0 }}
         whileInView={{ width: percentage }}
         transition={{ duration: 1.5, ease: "circOut" }}

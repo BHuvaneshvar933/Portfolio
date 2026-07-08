@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { Link } from 'react-router-dom';
-import resumePDF from './assets/C_Bhuvaneshvar_Reddy.pdf';
+import resumePDF from '../public/C_Bhuvaneshvar_Reddy.pdf';
 
 const Typewriter = ({ text, delay = 0 }) => {
   const [displayText, setDisplayText] = useState("");
@@ -124,12 +124,12 @@ const HeroSection = () => {
             transition={{ delay: 0.2 }}
           >
             <h1
-              className="text-4xl sm:text-6xl md:text-7xl font-black leading-tight tracking-tighter"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tighter"
               id="heading"
             >
               HELLO I&apos;M <br />
-              <span className="text-white glitch block" data-text="C BHUVANESHVAR">C BHUVANESHVAR</span>
-              <span className="bg-gradient-to-r from-purple-400 via-fuchsia-500 to-purple-600 text-transparent bg-clip-text block mt-2 animate-pulse-slow glitch" data-text="REDDY">
+              <span className="text-white glitch inline-block" data-text="C BHUVANESHVAR">C BHUVANESHVAR</span>{' '}
+              <span className="bg-gradient-to-r from-purple-400 via-fuchsia-500 to-purple-600 text-transparent bg-clip-text inline-block animate-pulse-slow glitch" data-text="REDDY">
                 REDDY
               </span>
             </h1>
@@ -142,7 +142,7 @@ const HeroSection = () => {
             className="text-lg sm:text-xl text-neutral-400 max-w-xl font-medium leading-relaxed font-mono"
             id="normalText"
           >
-            <Typewriter text="I'm a software engineer passionate about building scalable web and mobile solutions. Specializing in MERN and Android development with a strong focus on building great user experiences." />
+            <Typewriter text="I'm a Backend Engineer passionate about building scalable architectures and real-time systems. Specializing in production-grade backend systems and practical AI integrations to ship resilient, real-world products." />
           </motion.p>
 
           <motion.div

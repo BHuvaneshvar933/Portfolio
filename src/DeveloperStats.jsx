@@ -38,18 +38,18 @@ const stats = [
   },
   {
     icon: <BarChart className="w-6 h-6 text-purple-400" />,
-    label: "DSA Daily",
-    value: "LeetCode",
+    label: "DSA Problems",
+    value: "195+",
   },
   {
     icon: <Globe className="w-6 h-6 text-purple-400" />,
-    label: "Fullstack Ready",
-    value: "MERN Stack",
+    label: "Backend Ready",
+    value: "Node & Spring",
   },
   {
     icon: <BookOpen className="w-6 h-6 text-purple-400" />,
-    label: "Currently Exploring",
-    value: "Web3/AI",
+    label: "Currently Building",
+    value: "AI Systems",
   },
 ];
 
