@@ -32,6 +32,7 @@ const projects = [
     description: "Self-hosted, scalable workflow automation engine and integration platform with a visual builder.",
     Tech_Stack: ["React", "Node.js", "Prisma"],
     image: nexus,
+    demo: "https://nexus-flow-psi.vercel.app/",
     link: "https://github.com/BHuvaneshvar933/NexusFlow",
     domain: "Web development",
   },
